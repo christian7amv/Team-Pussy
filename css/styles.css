@@ -1,0 +1,89 @@
+/*Usad la paleta de colores en root, como alguien use cualquier otra le muerdo*/
+:root {
+     --oscuro: #0A3356;
+    --primario: #708993;
+    --rojo: #7a3349;
+    --claro: #A1C2BD;
+    --neutro: #E7F2EF;
+    --texto: #333333;
+    --radius: 16px;
+    --max-width: 1100px;
+    font-family: Arial, sans-serif;
+}
+*{ 
+    box-sizing: border-box; 
+}
+body{
+    margin: 0;
+    background-color: var(--neutro);
+    color: var(--texto);
+    line-height: 1.45;
+    
+}
+.contenedor{ 
+    max-width: var(--max-width); 
+    margin: 0 auto; 
+    padding: 24px; 
+}
+
+header{
+    background-color: var(--neutro);
+    color: var(--oscuro);
+}
+.barraSuperior{ 
+    /*display: flex; /*para que lo alinee bien*/
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 16px 24px; 
+}
+.logo{ 
+    display: flex; 
+    gap: 12px; 
+    align-items: center; 
+}
+.logo .IMG{
+    width: 44px; 
+    height: 44px; 
+    border-radius: 10px; 
+    background: var(--oscuro); 
+    display: grid; 
+    place-items: center; 
+    color: #fff; 
+    font-weight: 700; 
+
+}
+nav ul{ display: flex; 
+    gap: 18px; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+nav a{ 
+    color: var(--color-medio); 
+    text-decoration: none; 
+    font-weight: 600; 
+}
+.btn-custom{
+    --bs-btn-bg: var(--claro); 
+    --bs-btn-color: var(--oscuro); 
+    font-weight: 700; 
+    transition: box-shadow .2s ease, transform .2s ease, filter .2s ease;;
+}
+.btn-custom:hover{
+    --bs-btn-hover-bg: rgb(99, 114, 126);
+    --bs-btn-hover-color: #ccdce2; 
+    box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,.3);
+    transform: translateY(-2px);
+}
+
+footer{
+      background: #fff;
+      border-top: 1px solid #e9ecef;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+@media (max-width:640px) {
+  nav ul { display: none; }
+  .barraSuperior { padding: 10px 12px; }
+}
