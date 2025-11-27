@@ -176,3 +176,12 @@ footer.contenedor {
     min-height: 125px; 
     padding: 40px 200px; 
 }
+
+@media (max-width: 768px) {
+    .barraSuperior, footer.contenedor {
+        padding: 16px; 
+    }
+    .tarjetas{
+        grid-template-columns: 1fr; 
+    }
+}

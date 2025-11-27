@@ -40,3 +40,8 @@ th {
     background-color: #f9fafa;
     padding: 10px;
 }
+@media (max-width: 768px) {
+    .fondo .interior{
+        padding: 56px 24px;
+    }
+}
