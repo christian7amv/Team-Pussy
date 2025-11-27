@@ -153,6 +153,12 @@ p.subtitulo{
   font-weight: 700; 
   font-size: 13px;
 }
+.btn-custom:hover{
+    background-color: rgb(99, 114, 126);
+    color: #ccdce2; 
+    box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,.3);
+    transform: translateY(-2px);
+}
 
 
 
