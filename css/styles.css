@@ -53,7 +53,8 @@ header{
     font-weight: 700; 
 
 }
-nav ul{ display: flex; 
+nav ul{ 
+    display: flex; 
     gap: 18px; 
     list-style: none; 
     padding: 0; 
@@ -70,19 +71,27 @@ nav a{
     font-weight: 700; 
     transition: box-shadow .2s ease, transform .2s ease, filter .2s ease;;
 }
-.btn-custom:hover{
+.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; 
+    }
+
+.dropdown:hover .btn-custom{
     --bs-btn-hover-bg: rgb(99, 114, 126);
     --bs-btn-hover-color: #ccdce2; 
     box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,.3);
     transform: translateY(-2px);
 }
 
-footer{
-      background: #fff;
-      border-top: 1px solid #e9ecef;
-      padding: 2rem 0;
-      margin-top: 3rem;
-    }
+footer.contenedor {
+    background: #fff;
+    border-top: 1px solid #e9ecef;
+    margin-top: 3rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 24px; 
+}
+
 @media (max-width:640px) {
   nav ul { display: none; }
   .barraSuperior { padding: 10px 12px; }
