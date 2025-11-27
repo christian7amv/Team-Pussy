@@ -159,6 +159,9 @@ p.subtitulo{
     box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,.3);
     transform: translateY(-2px);
 }
+a{
+    color: inherit;
+}
 
 
 
