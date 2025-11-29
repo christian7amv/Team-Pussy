@@ -72,9 +72,7 @@ p {
   text-align: justify;
 }
 .ImgClasifEmpresa{
-  max-width: 70%;
-  /*float: left;
-  margin-right: 20px;*/
+  max-width: 100%;
 }
 
 
