@@ -49,10 +49,8 @@ header{ /*Encabezado de la pagina*/
     align-items: center; 
 }
 .logo .IMG{ /*ajusta solo la imagen del logo*/
-    width: 44px; 
+    width: auto; 
     height: 44px; 
-    border-radius: 10px; 
-    background: var(--oscuro); 
     display: grid; /*Divide el div en partes, centro, comienzo y final(?), pues para poner los contenidos en una parte u otra*/
     place-items: center;  
 
