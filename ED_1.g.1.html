@@ -57,72 +57,207 @@
         <div class="fondo contenedor">
             <div class="interior" style="background-color: rgb(241, 241, 241); color: var(--texto);">
 
-                <h1>Modelos de Ciclo de Vida del Software (Apartado 1.8)</h1>
+            <h1>Modelos de Ciclo de Vida del Software</h1>
+
+    <p>El ciclo de vida del software describe cómo se organiza el proceso de desarrollo, estableciendo el orden de las tareas, los productos intermedios y los criterios para pasar de una fase a otra.
+    La elección del modelo es crucial para el éxito del proyecto.</p>
+
+    
+
+    <section>
+      <h2>1.8.1. Modelo en Cascada (Ciclo de vida clásico)</h2>
+
+      <p>Es el modelo más antiguo y constituye la base de los demás.
+      Se caracteriza por ser secuencial, dividiendo el desarrollo en fases que se realizan una detrás de otra:</p>
+
+      <ol>
+        <li>Análisis</li>
+        <li>Diseño</li>
+        <li>Programación</li>
+        <li>Pruebas</li>
+        <li>Explotación</li>
+        <li>Mantenimiento</li>
+      </ol>
+
+      <h3>Características clave</h3>
+      <p>Flujo lineal y ordenado, aunque permite retrocesos si se encuentran fallos.</p>
+      <p>Cada fase genera documentación revisada antes de avanzar.</p>
+
+      <h3>Ventajas</h3>
+      <ul>
+        <li>Fácil de comprender y planificar.</li>
+        <li>Existe mucho soporte y herramientas asociadas.</li>
+      </ul>
+
+      <h3>Desventajas</h3>
+      <ul>
+        <li>Es poco realista suponer que el proceso es totalmente lineal.</li>
+        <li>Los cambios se gestionan mal y generan confusión.</li>
+        <li>El cliente no recibe una versión funcional hasta muy tarde.</li>
+        <li>Un fallo detectado tarde implica rehacer fases previas.</li>
+      </ul>
+
+      <p>Este modelo puede funcionar cuando los requisitos son muy estables y no se esperan cambios.</p>
+    </section>
+
+    <section>
+      <h2>1.8.2. Modelo de Proceso Incremental</h2>
+
+      <p>Surge para solucionar un problema del modelo en cascada:
+       el cliente tarda demasiado en recibir un producto funcional.</p>
+
+      <h3>Cómo funciona</h3>
+      <p>El software se divide en incrementos.</p>
+      <p>En cada incremento se aplican las mismas fases del modelo en cascada, pero en una parte del sistema.</p>
+      <p>Cada incremento entrega funcionalidad parcial, que se amplía en entregas posteriores.</p>
+
+      <h3>Ventajas (según Cuevas et al. 2003)</h3>
+      <ul>
+        <li>Reduce riesgos de retrasos y problemas de aceptación.</li>
+        <li>Los entregables intermedios permiten retroalimentación temprana.</li>
+        <li>El usuario puede validar el sistema a medida que se construye.</li>
+      </ul>
+
+      <h3>Cuándo usarlo</h3>
+      <ul>
+        <li>Cuando los requisitos no están bien definidos.</li>
+        <li>Cuando es muy probable que se produzcan cambios.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>1.8.3. Modelos de Proceso Evolutivo</h2>
+
+      <p>Estos modelos reconocen que el software evoluciona, los requisitos cambian y es irreal seguir una trayectoria totalmente lineal.</p>
+
+      <p>Incluyen:</p>
+
+      <h3>A: Construcción de Prototipos</h3>
+      <p>Se crea una versión preliminar del sistema (prototipo) para aclarar requisitos dudosos.</p>
+      <p>No está pensado como producto final: se usa, se evalúa y se descarta o se modifica.</p>
+      <p>Reduce incertidumbre y mejora la comunicación con el cliente.</p>
+
+      <h3>B: Modelo en Espiral (de Boehm)</h3>
+      <p>Organizado en ciclos que se desarrollan en forma de espiral, cada uno con cuatro actividades:</p>
+      <ol>
+        <li><strong>Planificación:</strong> definir objetivos, alternativas y restricciones.</li>
+        <li><strong>Análisis de riesgos:</strong> evaluar alternativas y prevenir problemas.</li>
+        <li><strong>Ingeniería:</strong> desarrollo parcial (análisis, diseño, programación…).</li>
+        <li><strong>Evaluación:</strong> revisión por parte del cliente y decisión de continuar.</li>
+      </ol>
+
+      <h3>Ventaja principal</h3>
+      <p>La gestión explícita y continua del riesgo.</p>
+
+      <h3>Desventaja principal (según Pressman)</h3>
+      <p>Requiere mucha experiencia en análisis de riesgos; si se evalúa mal, el proyecto puede fallar.</p>
+    </section>
+
+    <section>
+      <h2>Características comunes de los modelos evolutivos (Espiral + Prototipos)</h2>
+
+      <ul>
+        <li>El desarrollo es incremental, generando versiones cada vez más completas.</li>
+        <li>Se combinan con el modelo en cascada, pero aplicándolo solo a cada incremento, no al sistema completo.</li>
+      </ul>
+    </section>
+<br>
+                <h1>Metodologías RUP y Ágiles</h1>
 
                 <p>
-                    Los modelos de ciclo de vida del software describen cómo se organiza y planifica el proceso de
-                    desarrollo,
-                    estableciendo la secuencia de tareas y los criterios para avanzar entre fases. La elección del
-                    modelo influye
-                    directamente en el éxito del proyecto.
+                    Las metodologías de desarrollo de software describen cómo se organiza y gestiona el proceso de
+                    creación
+                    de un sistema. Entre las más representativas se encuentran RUP y las metodologías ágiles.
                 </p>
 
-                <h2>1. Modelo en Cascada</h2>
+                <h2>RUP (Rational Unified Process)</h2>
                 <p>
-                    El modelo en cascada es el más tradicional y se basa en una estructura secuencial de fases:
-                    análisis, diseño, programación, pruebas, explotación y mantenimiento. Cada etapa debe completarse
-                    antes de iniciar la siguiente.
-                </p>
-                <p>
-                    Es un modelo fácil de comprender y planificar, pero resulta poco flexible ante los cambios y
-                    el cliente no recibe una versión funcional hasta etapas tardías del proyecto.
+                    RUP es una metodología estructurada que organiza el desarrollo en fases y flujos de trabajo. Se basa
+                    en el uso de UML y en un proceso iterativo e incremental.
                 </p>
 
-                <h2>2. Modelo Incremental</h2>
+                <h3>Fases de RUP</h3>
+
+                <h4>1. Inicio (Inception)</h4>
                 <p>
-                    El modelo incremental divide el sistema en entregas parciales o incrementos. En cada incremento
-                    se aplican las mismas fases del modelo en cascada, pero sobre una parte del sistema.
-                    Esto permite entregar funcionalidades operativas desde el inicio y facilita la detección temprana
-                    de errores.
-                </p>
-                <p>
-                    Es especialmente útil cuando los requisitos no están completamente definidos y pueden cambiar
-                    durante el desarrollo.
+                    Su objetivo es evaluar la viabilidad del proyecto y definir sus objetivos, alcance, restricciones y
+                    recursos.
+                    Al finalizar esta fase, se decide si el proyecto continúa.
                 </p>
 
-                <h2>3. Modelos Evolutivos</h2>
+                <h4>2. Elaboración (Elaboration)</h4>
                 <p>
-                    Los modelos evolutivos aceptan que los requisitos pueden evolucionar y que es irreal seguir un
-                    proceso
-                    totalmente lineal. Incluyen la construcción de prototipos y el modelo en espiral.
+                    Se analizan los requisitos y se define una arquitectura base del sistema. También se identifican y
+                    reducen los riesgos principales.
                 </p>
 
-                <h3>3.1 Prototipos</h3>
+                <h4>3. Construcción (Construction)</h4>
                 <p>
-                    El modelo de prototipos consiste en crear una versión preliminar del sistema para clarificar
-                    requisitos inciertos mediante interacción directa con el cliente. El prototipo puede descartarse
-                    o modificarse.
+                    Se desarrolla y construye el sistema de forma iterativa, generando versiones cada vez más completas.
                 </p>
 
-                <h3>3.2 Modelo en Espiral</h3>
+                <h4>4. Transición (Transition)</h4>
                 <p>
-                    El modelo en espiral organiza el desarrollo en ciclos centrados en el análisis de riesgos.
-                    Cada ciclo incluye: planificación, análisis de riesgos, ingeniería y evaluación por parte del
-                    cliente.
+                    Se prepara y entrega el producto al cliente. Incluye pruebas finales, ajustes y despliegue.
                 </p>
+
+                <h3>Flujos de trabajo en RUP</h3>
+
+                <h4>Flujos de ingeniería</h4>
+                <ul>
+                    <li>Modelado del negocio</li>
+                    <li>Requisitos</li>
+                    <li>Análisis y diseño</li>
+                    <li>Implementación</li>
+                    <li>Pruebas</li>
+                    <li>Implantación</li>
+                </ul>
+
+                <h4>Flujos de apoyo</h4>
+                <ul>
+                    <li>Gestión de la configuración</li>
+                    <li>Gestión del proyecto</li>
+                    <li>Entorno</li>
+                </ul>
+
                 <p>
-                    Su principal ventaja es la gestión explícita de riesgos, aunque requiere equipos con experiencia
-                    para aplicarlo correctamente.
+                    RUP destaca por su estructura clara, el uso de iteraciones y la importancia que otorga a la
+                    arquitectura
+                    y la gestión de riesgos.
+                </p>
+
+                <h2>Metodologías Ágiles</h2>
+                <p>
+                    Las metodologías ágiles se basan en un enfoque flexible e iterativo, orientado a la colaboración con
+                    el
+                    cliente y a la entrega continua de software funcional.
+                </p>
+
+                <h3>Principios fundamentales</h3>
+                <ul>
+                    <li>Las personas y la comunicación son más importantes que los procesos y herramientas.</li>
+                    <li>Se prioriza el software que funciona por encima de la documentación extensa.</li>
+                    <li>El cliente participa activamente durante todo el proceso.</li>
+                    <li>Se realizan entregas frecuentes de versiones funcionales del producto.</li>
+                    <li>La adaptación al cambio es más importante que seguir un plan rígido.</li>
+                    <li>Los equipos son pequeños, motivados y autoorganizados.</li>
+                </ul>
+
+                <p>
+                    Las metodologías ágiles permiten reducir el coste de introducir cambios, acelerar la detección de
+                    errores
+                    y aumentar la satisfacción del cliente debido a la retroalimentación continua.
                 </p>
 
                 <h2>Conclusión</h2>
                 <p>
-                    Los modelos incremental y evolutivo ofrecen más flexibilidad y adaptabilidad que el modelo en
-                    cascada,
-                    especialmente en proyectos con incertidumbre o requisitos cambiantes. Mientras el cascada funciona
-                    cuando los requisitos son estables, los modelos incrementales y evolutivos proporcionan entregas
-                    tempranas y una mayor capacidad de adaptación.
+                    RUP ofrece una estructura sólida y bien definida basada en fases y flujos de trabajo, mientras que
+                    las
+                    metodologías ágiles se centran en la flexibilidad, la colaboración continua y las entregas rápidas.
+                    Ambos enfoques buscan mejorar la calidad del software, pero se aplican mejor en contextos diferentes
+                    según las necesidades del proyecto.
                 </p>
+
     </main>
     <footer class="contenedor">
         <div class="row">
