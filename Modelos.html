@@ -54,221 +54,236 @@
     </header>
     <main>
         <!-- aqui estaran los modelos -->
-  <h1>MODELOS DE CICLOS DE VIDA DEL SOFTWARE</h1>
+        <h1>MODELOS DE CICLOS DE VIDA DEL SOFTWARE</h1>
 
-  <p>El ciclo de vida del software describe cómo se organiza el proceso de desarrollo, estableciendo el orden de las tareas, los productos intermedios y los criterios para pasar de una fase a otra.</p>
+        <p>El ciclo de vida del software describe cómo se organiza el proceso de desarrollo, estableciendo el orden de <br>
+            las tareas, los productos intermedios y los criterios para pasar de una fase a otra.</p>
 
-  <p>La elección del modelo es crucial para el éxito del proyecto.</p>
+        <p>La elección del modelo es crucial para el éxito del proyecto.</p>
 
-  <h2>Modelo en Cascada</h2>
+        <h2>Modelo en Cascada</h2>
 
-  <p>Es el modelo más antiguo y constituye la base de los demás.</p>
+        <p>Es el modelo más antiguo y constituye la base de los demás.</p>
 
-  <p>Se caracteriza por ser secuencial, dividiendo el desarrollo en fases que se realizan una detrás de otra:</p>
-  <ol>
-    <li>Análisis</li>
-    <li>Diseño</li>
-    <li>Programación</li>
-    <li>Pruebas</li>
-    <li>Explotación</li>
-    <li>Mantenimiento</li>
-  </ol>
+        <p>Se caracteriza por ser secuencial, dividiendo el desarrollo en fases que se realizan una detrás de otra:</p>
 
-  <h3>Características clave</h3>
-  <ul>
-    <li>Flujo lineal y ordenado, aunque permite retrocesos si se encuentran fallos.</li>
-    <li>Cada fase genera documentación revisada antes de avanzar.</li>
-  </ul>
+        <img src="assets/img/modelo-cascada.png" alt="Diagrama del modelo en cascada">
 
-  <h3>Ventajas</h3>
-  <ul>
-    <li>Fácil de comprender y planificar.</li>
-    <li>Existe mucho soporte y herramientas asociadas.</li>
-  </ul>
+        <h3>Características clave</h3>
+        <ul>
+            <li>Flujo lineal y ordenado, aunque permite retrocesos si se encuentran fallos.</li>
+            <li>Cada fase genera documentación revisada antes de avanzar.</li>
+        </ul>
 
-  <h3>Desventajas</h3>
-  <ul>
-    <li>Es poco realista suponer que el proceso es totalmente lineal.</li>
-    <li>Los cambios se gestionan mal y generan confusión.</li>
-    <li>El cliente no recibe una versión funcional hasta muy tarde.</li>
-    <li>Un fallo detectado tarde implica rehacer fases previas.</li>
-  </ul>
+        <h3>Ventajas</h3>
+        <ul>
+            <li>Fácil de comprender y planificar.</li>
+            <li>Existe mucho soporte y herramientas asociadas.</li>
+        </ul>
 
-  <p>Este modelo puede funcionar cuando los requisitos son muy estables y no se esperan cambios.</p>
+        <h3>Desventajas</h3>
+        <ul>
+            <li>Es poco realista suponer que el proceso es totalmente lineal.</li>
+            <li>Los cambios se gestionan mal y generan confusión.</li>
+            <li>El cliente no recibe una versión funcional hasta muy tarde.</li>
+            <li>Un fallo detectado tarde implica rehacer fases previas.</li>
+        </ul>
 
-  <h2>Modelo de Proceso Incremental</h2>
+        <p>Este modelo puede funcionar cuando los requisitos son muy estables y no se esperan cambios.</p>
 
-  <p>Surge para solucionar un problema del modelo en cascada: el cliente tarda demasiado en recibir un producto funcional.</p>
+        <h2>Modelo de Proceso Incremental</h2>
 
-  <h3>Cómo funciona</h3>
-  <ul>
-    <li>El software se divide en incrementos.</li>
-    <li>En cada incremento se aplican las mismas fases del modelo en cascada, pero en una parte del sistema.</li>
-    <li>Cada incremento entrega funcionalidad parcial, que se amplía en entregas posteriores.</li>
-  </ul>
+        <p>Surge para solucionar un problema del modelo en cascada: el cliente tarda demasiado en <br>
+            recibir un producto funcional.</p>
 
-  <h3>Ventajas</h3>
-  <ul>
-    <li>Reduce riesgos de retrasos y problemas de aceptación.</li>
-    <li>Los entregables intermedios permiten retroalimentación temprana.</li>
-    <li>El usuario puede validar el sistema a medida que se construye.</li>
-  </ul>
+            <img src="assets/img/modelo-incremental.png" alt="Diagrama del modelo incremental">
 
-  <h3>Cuándo usarlo</h3>
-  <ul>
-    <li>Cuando los requisitos no están bien definidos.</li>
-    <li>Cuando es muy probable que se produzcan cambios.</li>
-  </ul>
+        <h3>Cómo funciona</h3>
+        <ul>
+            <li>El software se divide en incrementos.</li>
+            <li>En cada incremento se aplican las mismas fases del modelo en cascada, pero en una parte del sistema.
+            </li>
+            <li>Cada incremento entrega funcionalidad parcial, que se amplía en entregas posteriores.</li>
+        </ul>
 
-  <h2>Modelos de Proceso Evolutivo</h2>
+        <h3>Ventajas</h3>
+        <ul>
+            <li>Reduce riesgos de retrasos y problemas de aceptación.</li>
+            <li>Los entregables intermedios permiten retroalimentación temprana.</li>
+            <li>El usuario puede validar el sistema a medida que se construye.</li>
+        </ul>
 
-  <p>Estos modelos reconocen que el software evoluciona, los requisitos cambian y es irreal seguir una trayectoria totalmente lineal.</p>
+        <h3>Cuándo usarlo</h3>
+        <ul>
+            <li>Cuando los requisitos no están bien definidos.</li>
+            <li>Cuando es muy probable que se produzcan cambios.</li>
+        </ul>
 
-  <p>Incluyen:</p>
+        <h2>Modelos de Proceso Evolutivo</h2>
 
-  <h3>A) Construcción de Prototipos</h3>
-  <ul>
-    <li>Se crea una versión preliminar del sistema (prototipo) para aclarar requisitos dudosos.</li>
-    <li>No está pensado como producto final: se usa, se evalúa y se descarta o se modifica.</li>
-    <li>Reduce incertidumbre y mejora la comunicación con el cliente.</li>
-  </ul>
+        <p>Estos modelos reconocen que el software evoluciona, los requisitos cambian y es irreal seguir una trayectoria<br>
+            totalmente lineal.</p>
 
-  <h3>B) Modelo en Espiral</h3>
-  <p>Organizado en ciclos que se desarrollan en forma de espiral, cada uno con cuatro actividades:</p>
-  <ol>
-    <li>Planificación: definir objetivos, alternativas y restricciones.</li>
-    <li>Análisis de riesgos: evaluar alternativas y prevenir problemas.</li>
-    <li>Ingeniería: desarrollo parcial (análisis, diseño, programación…).</li>
-    <li>Evaluación: revisión por parte del cliente y decisión de continuar.</li>
-  </ol>
+        <p>Incluyen:</p>
 
-  <h3>Ventaja principal</h3>
-  <p>La gestión explícita y continua del riesgo.</p>
+        <h3>Construcción de Prototipos</h3>
 
-  <h3>Desventaja principales</h3>
-  <p>Requiere mucha experiencia en análisis de riesgos; si se evalúa mal, el proyecto puede fallar.</p>
+        <img src="assets/img/modelo-prototipos.png" alt="Diagrama del modelo de prototipos">
 
-  <h3>Características comunes de los modelos evolutivos (Espiral + Prototipos)</h3>
-  <ul>
-    <li>El desarrollo es incremental, generando versiones cada vez más completas.</li>
-    <li>Se combinan con el modelo en cascada, pero aplicándolo solo a cada incremento, no al sistema completo.</li>
-  </ul>
+        <ul>
+            <li>Se crea una versión preliminar del sistema (prototipo) para aclarar requisitos dudosos.</li>
+            <li>No está pensado como producto final: se usa, se evalúa y se descarta o se modifica.</li>
+            <li>Reduce incertidumbre y mejora la comunicación con el cliente.</li>
+        </ul>
 
-  <h2>METODOLOGÍAS RUP Y ÁGILES</h2>
+        <h3>Modelo en Espiral</h3>
+        <p>Organizado en ciclos que se desarrollan en forma de espiral, cada uno con cuatro actividades:</p>
 
-  <p>El Proceso Unificado de Rational (RUP) es una metodología moderna y estructurada de desarrollo de software creada por Rational Software Corporation y respaldada por autores como Jacobson, Booch y Rumbaugh (creadores de UML).</p>
+        <img src="assets/img/modelo-espiral.png" alt="Diagrama del modelo en espiral">
 
-  <p>RUP se organiza en dos dimensiones:</p>
+        <ol>
+            <li>Planificación: definir objetivos, alternativas y restricciones.</li>
+            <li>Análisis de riesgos: evaluar alternativas y prevenir problemas.</li>
+            <li>Ingeniería: desarrollo parcial (análisis, diseño, programación…).</li>
+            <li>Evaluación: revisión por parte del cliente y decisión de continuar.</li>
+        </ol>
 
-  <h3>1. Dimensión temporal</h3>
-  <p>El ciclo de vida se organiza en ciclos, cada uno compuesto por cuatro fases secuenciales:</p>
+        <h3>Ventaja principal</h3>
+        <p>La gestión explícita y continua del riesgo.</p>
 
-  <h4>Fase de comienzo</h4>
-  <ul>
-    <li>Se estudia la viabilidad del sistema.</li>
-    <li>Se definen objetivos, alcance, recursos, riesgos, hitos principales y un plan general.</li>
-    <li>Al terminar, se decide si el proyecto continúa.</li>
-  </ul>
+        <h3>Desventaja principales</h3>
+        <p>Requiere mucha experiencia en análisis de riesgos; si se evalúa mal, el proyecto puede fallar.</p>
 
-  <h4>Fase de elaboración</h4>
-  <ul>
-    <li>Se analizan los problemas del dominio.</li>
-    <li>Se define una arquitectura base del sistema.</li>
-    <li>Se desarrolla un prototipo arquitectónico validado.</li>
-    <li>Se eliminan los riesgos más importantes.</li>
-  </ul>
+        <h3>Características comunes de los modelos evolutivos (Espiral + Prototipos)</h3>
+        <ul>
+            <li>El desarrollo es incremental, generando versiones cada vez más completas.</li>
+            <li>Se combinan con el modelo en cascada, pero aplicándolo solo a cada incremento, no al sistema completo.
+            </li>
+        </ul>
 
-  <h4>Fase de construcción</h4>
-  <ul>
-    <li>Se desarrolla el sistema de forma iterativa e incremental.</li>
-    <li>Se crean versiones cada vez más completas del software.</li>
-  </ul>
+        <h2>METODOLOGÍAS RUP Y ÁGILES</h2>
 
-  <h4>Fase de transición</h4>
-  <ul>
-    <li>Se prepara el producto para su entrega al cliente.</li>
-    <li>Incluye ajustes finales y despliegue.</li>
-  </ul>
+        <p>El Proceso Unificado de Rational (RUP) es una metodología moderna y estructurada de desarrollo de software <br>
+            creada por Rational Software Corporation y respaldada por autores como Jacobson, Booch y Rumbaugh (creadores<br>
+            de UML).</p>
 
-  <h3>2. Dimensión estática</h3>
-  <p>Define los elementos que participan en el desarrollo:</p>
+            <img src="assets/img/modelo-rup.png" alt="Diagrama del modelo RUP">
 
-  <ul>
-    <li><strong>Actividades (activities)</strong>: Son las tareas a realizar (diseño, análisis, pruebas, etc.).</li>
-    <li><strong>Productos intermedios (artifacts)</strong>: Documentos, modelos, código, ejecutables, etc.</li>
-    <li><strong>Roles (workers)</strong>: Los perfiles responsables de actividades.</li>
-    <li><strong>Flujos de trabajo (workflows)</strong>: Secuencias de actividades. Se dividen en:</li>
-  </ul>
+        <p>RUP se organiza en dos dimensiones:</p>
 
-  <h4>A) Flujos de ingeniería</h4>
-  <ol>
-    <li>Modelado del negocio</li>
-    <li>Requisitos</li>
-    <li>Análisis y diseño</li>
-    <li>Implementación</li>
-    <li>Pruebas</li>
-    <li>Implantación</li>
-  </ol>
+        <h3>1. Dimensión temporal</h3>
+        <p>El ciclo de vida se organiza en ciclos, cada uno compuesto por cuatro fases secuenciales:</p>
 
-  <h4>B) Flujos de apoyo</h4>
-  <ol>
-    <li>Gestión de la configuración</li>
-    <li>Gestión del proyecto</li>
-    <li>Entorno</li>
-  </ol>
+        <h4>Fase de comienzo</h4>
+        <ul>
+            <li>Se estudia la viabilidad del sistema.</li>
+            <li>Se definen objetivos, alcance, recursos, riesgos, hitos principales y un plan general.</li>
+            <li>Al terminar, se decide si el proyecto continúa.</li>
+        </ul>
 
-  <h2>METODOLOGÍAS DE DESARROLLO ÁGIL</h2>
+        <h4>Fase de elaboración</h4>
+        <ul>
+            <li>Se analizan los problemas del dominio.</li>
+            <li>Se define una arquitectura base del sistema.</li>
+            <li>Se desarrolla un prototipo arquitectónico validado.</li>
+            <li>Se eliminan los riesgos más importantes.</li>
+        </ul>
 
-  <p>Las metodologías ágiles surgieron en 2001 con el Manifiesto Ágil, que promueve una forma más flexible y colaborativa de desarrollar software.</p>
+        <h4>Fase de construcción</h4>
+        <ul>
+            <li>Se desarrolla el sistema de forma iterativa e incremental.</li>
+            <li>Se crean versiones cada vez más completas del software.</li>
+        </ul>
 
-  <h3>Principios clave del desarrollo ágil:</h3>
+        <h4>Fase de transición</h4>
+        <ul>
+            <li>Se prepara el producto para su entrega al cliente.</li>
+            <li>Incluye ajustes finales y despliegue.</li>
+        </ul>
 
-  <h4>Enfoque en personas y comunicación</h4>
-  <ul>
-    <li>Los individuos y sus interacciones se valoran más que los procesos y herramientas.</li>
-    <li>La comunicación directa y continua es fundamental.</li>
-  </ul>
+        <h3>2. Dimensión estática</h3>
+        <p>Define los elementos que participan en el desarrollo:</p>
 
-  <h4>Software funcional sobre documentación</h4>
-  <ul>
-    <li>Se prioriza la entrega de software que funcione, reduciendo burocracia y documentación excesiva.</li>
-  </ul>
+        <ul>
+            <li><strong>Actividades (activities)</strong>: Son las tareas a realizar (diseño, análisis, pruebas, etc.).
+            </li>
+            <li><strong>Productos intermedios (artifacts)</strong>: Documentos, modelos, código, ejecutables, etc.</li>
+            <li><strong>Roles (workers)</strong>: Los perfiles responsables de actividades.</li>
+            <li><strong>Flujos de trabajo (workflows)</strong>: Secuencias de actividades. Se dividen en:</li>
+        </ul>
 
-  <h4>Colaboración estrecha con el cliente</h4>
-  <ul>
-    <li>El cliente participa continuamente.</li>
-    <li>Se revisa cada entrega y se proporciona retroalimentación frecuente.</li>
-  </ul>
+        <h4>A) Flujos de ingeniería</h4>
+        <ol>
+            <li>Modelado del negocio</li>
+            <li>Requisitos</li>
+            <li>Análisis y diseño</li>
+            <li>Implementación</li>
+            <li>Pruebas</li>
+            <li>Implantación</li>
+        </ol>
 
-  <h4>Entregas rápidas e incrementales</h4>
-  <ul>
-    <li>Se entregan versiones funcionales cada pocas semanas.</li>
-    <li>Esto facilita ajustes tempranos y reduce errores graves.</li>
-  </ul>
+        <h4>B) Flujos de apoyo</h4>
+        <ol>
+            <li>Gestión de la configuración</li>
+            <li>Gestión del proyecto</li>
+            <li>Entorno</li>
+        </ol>
 
-  <h4>Respuesta rápida al cambio</h4>
-  <ul>
-    <li>Los cambios son bienvenidos incluso en etapas avanzadas.</li>
-    <li>El coste de incorporar cambios disminuye gracias al desarrollo incremental, pruebas continuas y la retroalimentación constante.</li>
-  </ul>
+        <h2>METODOLOGÍAS DE DESARROLLO ÁGIL</h2>
 
-  <h4>Equipos pequeños y motivados</h4>
-  <ul>
-    <li>Se fomenta la autonomía del equipo.</li>
-    <li>Se crean entornos de trabajo favorables y colaborativos.</li>
-  </ul>
+        <p>Las metodologías ágiles surgieron en 2001 con el Manifiesto Ágil, que promueve una forma más flexible y
+            colaborativa de desarrollar software.</p>
 
-  <h3>Ventajas destacadas</h3>
-  <ul>
-    <li>Reducción del coste de cambios.</li>
-    <li>Rápida detección de errores gracias a iteraciones cortas.</li>
-    <li>Mayor satisfacción del cliente.</li>
-    <li>Menor documentación y mayor foco en resultados.</li>
-  </ul>
+        <h3>Principios clave del desarrollo ágil:</h3>
 
-  <hr>
+        <h4>Enfoque en personas y comunicación</h4>
+        <ul>
+            <li>Los individuos y sus interacciones se valoran más que los procesos y herramientas.</li>
+            <li>La comunicación directa y continua es fundamental.</li>
+        </ul>
 
-  <p>Contenido estructurado según el documento original: títulos y secciones principales reproducidos fielmente.</p>
+        <h4>Software funcional sobre documentación</h4>
+        <ul>
+            <li>Se prioriza la entrega de software que funcione, reduciendo burocracia y documentación excesiva.</li>
+        </ul>
+
+        <h4>Colaboración estrecha con el cliente</h4>
+        <ul>
+            <li>El cliente participa continuamente.</li>
+            <li>Se revisa cada entrega y se proporciona retroalimentación frecuente.</li>
+        </ul>
+
+        <h4>Entregas rápidas e incrementales</h4>
+        <ul>
+            <li>Se entregan versiones funcionales cada pocas semanas.</li>
+            <li>Esto facilita ajustes tempranos y reduce errores graves.</li>
+        </ul>
+
+        <h4>Respuesta rápida al cambio</h4>
+        <ul>
+            <li>Los cambios son bienvenidos incluso en etapas avanzadas.</li>
+            <li>El coste de incorporar cambios disminuye gracias al desarrollo incremental, pruebas continuas y la
+                retroalimentación constante.</li>
+        </ul>
+
+        <h4>Equipos pequeños y motivados</h4>
+        <ul>
+            <li>Se fomenta la autonomía del equipo.</li>
+            <li>Se crean entornos de trabajo favorables y colaborativos.</li>
+        </ul>
+
+        <h3>Ventajas destacadas</h3>
+        <ul>
+            <li>Reducción del coste de cambios.</li>
+            <li>Rápida detección de errores gracias a iteraciones cortas.</li>
+            <li>Mayor satisfacción del cliente.</li>
+            <li>Menor documentación y mayor foco en resultados.</li>
+        </ul>
+
+        <hr>
+
+        <p>Contenido estructurado según el documento original: títulos y secciones principales reproducidos fielmente.
+        </p>
 
 
     </main>
