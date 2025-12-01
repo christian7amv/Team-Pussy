@@ -1,4 +1,5 @@
-.fondo {
+/* Estos estilos solo se aplican a las paginas de información, por eso es diferente del styles principal, ajusta algunas cosas del styles principal tmb*/
+.fondo { /*Ajustes del fondo*/
   display: grid;
   place-items: center;
   padding: px 24px;
@@ -13,7 +14,7 @@
   padding: 56px 80px;
 
 }
-.interior .IMGpequeña {
+.interior .IMGpequeña { /*Imagenes pequeñas, usado en imagenes decorativas*/
   max-width: 35%;
   height: auto;
   margin-top: 20px;
@@ -22,8 +23,8 @@
   margin-right: 20px;
   border: 2px solid #afa8a8;
 }
-.interior .IMGmportante {
-  max-width: 55%;
+.interior .IMGmportante { /*Imagenes importantes/con informacion*/
+  width: 55%;
   height: auto;
   margin-left: 10px;
   border-radius: var(--radius);
@@ -31,7 +32,7 @@
   border: 2px solid #afa8a8;
 }
 
-table {
+table { /*Estilo de las tablas*/
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -43,22 +44,22 @@ table {
 }
 
 th,
-td {
+td { /*Estilo de las celdas de las tablas, las rayitas :)*/
   padding: 6px;
   text-align: left;
   border-left: #555555 1px solid;
   border-bottom: 1px solid #555555;
 }
 
-tr:nth-child(odd) td {
+tr:nth-child(odd) td { /*Color de filas impares*/
   background-color: #cbcad3;
 }
 
-tr:nth-child(even) td {
+tr:nth-child(even) td { /*las pares pares*/
   background-color: #eef1f1;
 }
 
-th {
+th { /*Estilo de los encabezados de las tablas*/
   background-color: #f9fafa;
   padding: 10px;
 }
@@ -71,14 +72,6 @@ p {
   line-height: 1.6;
   text-align: justify;
 }
-.ImgClasifEmpresa{
-  max-width: 100%;
-}
-.caracComunIDEs{
-  max-width: 100%;
-}
-
-
 
 
 @media (max-width: 768px) {
