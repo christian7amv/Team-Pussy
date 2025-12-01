@@ -9,16 +9,16 @@
     --radius: 16px;
     --max-width: 1100px;
     font-family: Arial, sans-serif;
-}
+}/*Variables de para paleta de colores y estilos globales*/
 *{ 
-    box-sizing: border-box; 
+    box-sizing: border-box; /*Para que el padding no afecte al tamaño total de los elementos*/
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /*Para que al hacer click en un enlace que vaya a una parte de la misma pagina, el scroll sea suave*/
 }
 body{
-    display: flex;
-    flex-direction: column;
+    display: flex;  /*Usamos flexbox para que todo esté en el mismo eje*/
+    flex-direction: column;/*flex se hara en este caso en el eje vertical*/
     min-height: 100vh;
     height: 100%;
     margin: 0;
@@ -27,71 +27,68 @@ body{
     line-height: 1.45;
     
 }
-.contenedor{ 
+.contenedor{ /*Contenedor generico para los divs, quita el margen y el fondo*/
     margin: 0 auto; 
     padding: 24px;
     background: none;
 }
 
-header{
+header{ /*Encabezado de la pagina*/
     background-color: var(--neutro);
     color: var(--oscuro);
 }
-.barraSuperior{ 
-    /*display: flex; /*para que lo alinee bien*/
+.barraSuperior{  /*Barra superior o navegacion, los botones de reservas, destinos...*/
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
     padding: 16px 200px; 
 }
-.logo{ 
+.logo{ /*ajusta todo el contenedor del logo, las letras tambien son parte de el*/
     display: flex; 
     gap: 12px; 
     align-items: center; 
 }
-.logo .IMG{
-    width: 44px; 
+.logo .IMG{ /*ajusta solo la imagen del logo*/
+    width: auto; 
     height: 44px; 
-    border-radius: 10px; 
-    background: var(--oscuro); 
-    display: grid; 
+    display: grid; /*Divide el div en partes, centro, comienzo y final(?), pues para poner los contenidos en una parte u otra*/
     place-items: center;  
 
 }
-nav ul{ 
+nav ul{  /*Lista de opciones en la barra de navegacion, estan en lista por bootstrap*/
     display: flex; 
     gap: 18px; 
     list-style: none; 
     padding: 0; 
     margin: 0; 
 }
-nav a{ 
+nav a{ /*Estilo de los enlaces en la barra de navegacion*/
     color: var(--color-medio); 
     text-decoration: none; 
     font-weight: 600; 
 }
-.btn-custom{
+.btn-custom{ /*Estilo de los botones*/
     --bs-btn-bg: var(--claro); 
     --bs-btn-color: var(--oscuro); 
     font-weight: 700; 
     transition: box-shadow .2s ease, transform .2s ease;
 }
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu { /*Efecto hover de los botones en el menu dropdown*/
       display: block;
       margin-top: 0; 
     }
 
-.dropdown:hover .btn-custom{
+.dropdown:hover .btn-custom{ /*Efecto hover de los botones en general*/
     --bs-btn-hover-bg: rgb(99, 114, 126);
     --bs-btn-hover-color: #ccdce2; 
     box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,.3);
     transform: translateY(-2px);
 }
 /**MAIN**/
-main{
+main{ /*Hace que el main ocupe todo el espacio disponible entre header y footer, asi que footer se queda abajo*/
     flex: 1;
 }
-.fondo{ 
+.fondo{  /*Tal cual el fondo del main*/
   display: grid; 
   place-items: center;
   padding: 48px 24px;
@@ -99,23 +96,23 @@ main{
   background-color: #798792;
   color: #fff;
 }
-.fondo .interior{
+.fondo .interior{ /*Contenedor arriba del fondo*/
     min-height: 68.75vh;
     max-width: var(--max-width);
   margin: 0 auto;
   padding: 56px 24px;
   
 }
-.interior h1{ 
+.interior h1{  /*Titulo grande del interior*/
     font-size: clamp(28px,4.6vw,44px); 
     margin: 12px 0 8px; 
 }
 
-p.subtitulo{ 
+p.subtitulo{ /*Clase subtitulo para etiquetas p*/
     max-width: 680px; 
     opacity: 0.95; 
 }
-.tarjetas{
+.tarjetas{ /*Contenedor para colocar bien las tarjetas en su lugar*/
     max-width: var(--max-width);
     display: grid; 
     gap: 18px; 
@@ -130,24 +127,24 @@ p.subtitulo{
   display: flex; 
   flex-direction: column;
 }
-.tarjeta img {
+.tarjeta img { /*Imagen dentro de la tarjeta*/
   width: 100%; 
   height: 160px;
   object-fit: cover;
 }
-.tarjeta .cuerpo { 
+.tarjeta .cuerpo { /*Cuerpo dentro de la tarjeta*/
     padding: 14px; 
 }
-.tarjeta h3 { 
+.tarjeta h3 { /*Titulo dentro de la tarjeta*/
     margin: 0 0 8px; 
     font-size: 18px; 
     color: var(--oscuro); }
-.tarjeta p {
+.tarjeta p { /*Descripcion dentro de la tarjeta*/
     margin: 0 0 12px; 
     color: var(--oscuro); 
     font-size: 14px; }
 
-.tarjeta .btn-custom {
+.tarjeta .btn-custom { /*Boton dentro de la tarjeta*/
   display: inline-block; 
   padding: 6px 10px;
   border-radius: 999px;
@@ -156,13 +153,13 @@ p.subtitulo{
   font-weight: 700; 
   font-size: 13px;
 }
-.btn-custom:hover{
+.btn-custom:hover{ /*Efecto hover de los botones*/
     background-color: rgb(99, 114, 126);
     color: #ccdce2; 
     box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,.3);
     transform: translateY(-2px);
 }
-a{
+a{ /*Estilo general de los enlaces*/
     color: inherit;
 }
 
@@ -170,7 +167,7 @@ a{
 
 
 
-footer.contenedor {
+footer.contenedor { /*Clase contenedor para el footer (funciona con el footer de arriba tambien, este solo es exclusivo del footer)*/
     width: 100%;
     background: #fff;
     border-top: 1px solid #e9ecef;
@@ -180,11 +177,11 @@ footer.contenedor {
     padding: 40px 200px; 
 }
 
-@media (max-width: 768px) {
-    .barraSuperior, footer.contenedor {
+@media (max-width: 768px) { /*Reactive para pantallas pequeñas*/
+    .barraSuperior, footer.contenedor { /*Padding reducido en pantallas pequeñas*/
         padding: 16px; 
     }
-    .tarjetas{
+    .tarjetas{ /*Contenedor de las tarjetas, las pone en vertical*/
         grid-template-columns: 1fr; 
     }
 }
