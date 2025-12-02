@@ -1,273 +1,303 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Cuestionario: Modelos de Ciclos de Vida y Metodologías Ágiles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <!--Los estilos, personalizados después de bootstrap, para personalizar estilos de bootstrap como botones-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js" defer></script>
 </head>
+
 <body>
-
-    <h1>Cuestionario: Modelos de Ciclos de Vida y Metodologías Ágiles</h1>
-    <p>Selecciona la mejor opción para cada pregunta.</p>
-
-    <form id="cuestionario2" onsubmit="return calcularPuntuacion(event)">
-
-        <fieldset>
-            <legend><h2>PREGUNTAS DE MODELOS DE CICLOS DE VIDA DEL SOFTWARE</h2></legend>
-
-            <p>1. ¿Cuál es la principal característica del modelo en cascada según su definición clásica?</p>
-            <div>
-                <input type="radio" id="p1_a" name="pregunta1" value="a">
-                <label for="p1_a">a) Permite la entrega continua de incrementos de software.</label><br>
-
-                <input type="radio" id="p1_b" name="pregunta1" value="b">
-                <label for="p1_b">b) Las fases se ejecutan de forma secuencial permitiendo retrocesos limitados.</label><br>
-
-                <input type="radio" id="p1_c" name="pregunta1" value="c">
-                <label for="p1_c">c) Se centra en prototipos que evolucionan hasta el producto final.</label><br>
-                
-                <input type="radio" id="p1_d" name="pregunta1" value="d">
-                <label for="p1_d">d) Se basa en ciclos iterativos organizados alrededor del análisis de riesgos.</label>
+    <header>
+        <div class="barraSuperior contenedor">
+            <div class="logo">
+                <a href="index.html"><img class="IMG" src="assets/img/Stardew-Valley-Cat-Pouncing-On-Yarn-Ball-PNG.png"
+                        alt="logo"></a>
+                <div>
+                    <div style="font-weight:800">TEAM PUSSY</div>
+                    <div class="text-muted" style="font-size:12px">1º DAM</div>
+                </div>
             </div>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a class="btn btn-custom dropdown-toggle" href="PII.html" role="button"
+                            data-bs-toggle="dropdown">
+                            Proyecto II
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="PII.html">1.a</a></li>
+                            <li><a class="dropdown-item" href="PII.html#1.b">1.b</a></li>
+                            <li><a class="dropdown-item" href="PII.html#1.c">1.c</a></li>
+                        </ul>
+                    </li>
 
-            <p>2. ¿Cuál de los siguientes es un inconveniente señalado para el modelo en cascada?</p>
-            <div>
-                <input type="radio" id="p2_a" name="pregunta2" value="a">
-                <label for="p2_a">a) Es difícil de comprender y planificar.</label><br>
-
-                <input type="radio" id="p2_b" name="pregunta2" value="b">
-                <label for="p2_b">b) El cliente obtiene versiones funcionales desde el principio.</label><br>
-
-                <input type="radio" id="p2_c" name="pregunta2" value="c">
-                <label for="p2_c">c) Detectar tarde un fallo implica rehacer varias fases previas.</label><br>
-                
-                <input type="radio" id="p2_d" name="pregunta2" value="d">
-                <label for="p2_d">d) Su excesiva flexibilidad provoca confusión en el equipo.</label>
-            </div>
-
-            <p>3. ¿Qué problema intenta resolver el modelo de proceso incremental?</p>
-            <div>
-                <input type="radio" id="p3_a" name="pregunta3" value="a">
-                <label for="p3_a">a) La complejidad del análisis de riesgos.</label><br>
-
-                <input type="radio" id="p3_b" name="pregunta3" value="b">
-                <label for="p3_b">b) Que el cliente recibe una versión funcional demasiado tarde.</label><br>
-
-                <input type="radio" id="p3_c" name="pregunta3" value="c">
-                <label for="p3_c">c) La excesiva documentación generada durante las fases.</label><br>
-                
-                <input type="radio" id="p3_d" name="pregunta3" value="d">
-                <label for="p3_d">d) La dificultad de incorporar cambios en el mantenimiento.</label>
-            </div>
-
-            <p>4. ¿Qué afirmación describe mejor el modelo incremental?</p>
-            <div>
-                <input type="radio" id="p4_a" name="pregunta4" value="a">
-                <label for="p4_a">a) El software se construye mediante prototipos rápidos descartables.</label><br>
-
-                <input type="radio" id="p4_b" name="pregunta4" value="b">
-                <label for="p4_b">b) En cada incremento se aplican las fases del modelo en cascada.</label><br>
-
-                <input type="radio" id="p4_c" name="pregunta4" value="c">
-                <label for="p4_c">c) Todo el software se desarrolla antes de cualquier entrega.</label><br>
-                
-                <input type="radio" id="p4_d" name="pregunta4" value="d">
-                <label for="p4_d">d) No permite retroalimentación del cliente.</label>
-            </div>
-
-            <p>5. Según el texto, ¿cuándo es más recomendable emplear el modelo incremental?</p>
-            <div>
-                <input type="radio" id="p5_a" name="pregunta5" value="a">
-                <label for="p5_a">a) Cuando los requisitos están completamente definidos desde el principio.</label><br>
-
-                <input type="radio" id="p5_b" name="pregunta5" value="b">
-                <label for="p5_b">b) Cuando no se esperan cambios en el proyecto.</label><br>
-
-                <input type="radio" id="p5_c" name="pregunta5" value="c">
-                <label for="p5_c">c) Cuando los requisitos no están bien definidos y es probable que cambien.</label><br>
-                
-                <input type="radio" id="p5_d" name="pregunta5" value="d">
-                <label for="p5_d">d) Cuando se desea evitar entregas parciales al cliente.</label>
-            </div>
-
-            <p>6. ¿Qué distinguen en común los modelos del proceso evolutivo (prototipos y espiral)?</p>
-            <div>
-                <input type="radio" id="p6_a" name="pregunta6" value="a">
-                <label for="p6_a">a) Ambos evitan completamente el uso del modelo en cascada.</label><br>
-
-                <input type="radio" id="p6_b" name="pregunta6" value="b">
-                <label for="p6_b">b) Siguen un proceso incremental que genera versiones cada vez más completas.</label><br>
-
-                <input type="radio" id="p6_c" name="pregunta6" value="c">
-                <label for="p6_c">c) No permiten interacción del cliente hasta la última etapa.</label><br>
-                
-                <input type="radio" id="p6_d" name="pregunta6" value="d">
-                <label for="p6_d">d) Se aplican únicamente en proyectos sin riesgos.</label>
-            </div>
-
-            <p>7. ¿Qué fase es clave en el modelo en espiral y lo diferencia del incremental y el cascada?</p>
-            <div>
-                <input type="radio" id="p7_a" name="pregunta7" value="a">
-                <label for="p7_a">a) Programación.</label><br>
-
-                <input type="radio" id="p7_b" name="pregunta7" value="b">
-                <label for="p7_b">b) Revisión formal de documentación.</label><br>
-
-                <input type="radio" id="p7_c" name="pregunta7" value="c">
-                <label for="p7_c">c) Análisis de riesgos en cada iteración.</label><br>
-                
-                <input type="radio" id="p7_d" name="pregunta7" value="d">
-                <label for="p7_d">d) Entrega única del software tras todas las fases.</label>
-            </div>
-
-            <p>8. ¿Cuál es la principal desventaja del modelo en espiral según Pressman?</p>
-            <div>
-                <input type="radio" id="p8_a" name="pregunta8" value="a">
-                <label for="p8_a">a) Es demasiado rígido y secuencial.</label><br>
-
-                <input type="radio" id="p8_b" name="pregunta8" value="b">
-                <label for="p8_b">b) Requiere poca documentación y genera confusión.</label><br>
-
-                <input type="radio" id="p8_c" name="pregunta8" value="c">
-                <label for="p8_c">c) Exige mucha experiencia en la evaluación de riesgos.</label><br>
-                
-                <input type="radio" id="p8_d" name="pregunta8" value="d">
-                <label for="p8_d">d) No puede combinarse con el modelo en cascada.</label>
-            </div>
-        </fieldset>
-        
-        <hr>
-
-        <fieldset>
-            <legend><h2>PREGUNTAS DE METODOLOGÍAS RUP Y ÁGILES</h2></legend>
-
-            <p>1. ¿Cuál es el objetivo principal de la fase de comienzo (inception) en RUP?</p>
-            <div>
-                <input type="radio" id="p9_a" name="pregunta9" value="a">
-                <label for="p9_a">a) Implementar el sistema completo.</label><br>
-
-                <input type="radio" id="p9_b" name="pregunta9" value="b">
-                <label for="p9_b">b) Establecer la viabilidad del sistema y definir su alcance.</label><br>
-
-                <input type="radio" id="p9_c" name="pregunta9" value="c">
-                <label for="p9_c">c) Eliminar los riesgos importantes mediante un prototipo.</label><br>
-                
-                <input type="radio" id="p9_d" name="pregunta9" value="d">
-                <label for="p9_d">d) Realizar las pruebas del sistema.</label>
-            </div>
-
-            <p>2. ¿Cuál de los siguientes elementos pertenece a los flujos de ingeniería dentro de RUP?</p>
-            <div>
-                <input type="radio" id="p10_a" name="pregunta10" value="a">
-                <label for="p10_a">a) Gestión de proyecto.</label><br>
-
-                <input type="radio" id="p10_b" name="pregunta10" value="b">
-                <label for="p10_b">b) Entorno.</label><br>
-
-                <input type="radio" id="p10_c" name="pregunta10" value="c">
-                <label for="p10_c">c) Modelado del negocio.</label><br>
-                
-                <input type="radio" id="p10_d" name="pregunta10" value="d">
-                <label for="p10_d">d) Gestión de la configuración.</label>
-            </div>
-
-            <p>3. ¿Cuál de las siguientes características diferencia a las metodologías ágiles frente a otras más tradicionales?</p>
-            <div>
-                <input type="radio" id="p11_a" name="pregunta11" value="a">
-                <label for="p11_a">a) Mayor importancia a la documentación detallada.</label><br>
-
-                <input type="radio" id="p11_b" name="pregunta11" value="b">
-                <label for="p11_b">b) Menor frecuencia de entregas al cliente.</label><br>
-
-                <input type="radio" id="p11_c" name="pregunta11" value="c">
-                <label for="p11_c">c) Entrega frecuente de software que funcione y colaboración continua con el cliente.</label><br>
-                
-                <input type="radio" id="p11_d" name="pregunta11" value="d">
-                <label for="p11_d">d) Equipos grandes y jerarquizados con roles muy estrictos.</label>
-            </div>
-
-            <p>4. Según los principios ágiles, ¿cuál es la principal medida del progreso en un proyecto?</p>
-            <div>
-                <input type="radio" id="p12_a" name="pregunta12" value="a">
-                <label for="p12_a">a) El porcentaje de tareas completadas según el plan.</label><br>
-
-                <input type="radio" id="p12_b" name="pregunta12" value="b">
-                <label for="p12_b">b) La cantidad de documentación generada.</label><br>
-
-                <input type="radio" id="p12_c" name="pregunta12" value="c">
-                <label for="p12_c">c) Un software que funcione.</label><br>
-                
-                <input type="radio" id="p12_d" name="pregunta12" value="d">
-                <label for="p12_d">d) El número de reuniones realizadas.</label>
-            </div>
-
-        </fieldset>
-        
-        <hr>
-
-        <div>
-            <input type="submit" value="Ver Puntuación (Alerta)">
+                    <li class="dropdown">
+                        <a class="btn btn-custom dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Entornos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ED.html">Teoría</a></li>
+                            <li><a class="dropdown-item" href="IDEs.html">IDEs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    <main>
+        <div class="fondo contenedor">
+            <div class="interior" style="background-color: rgb(241, 241, 241); color: var(--texto);">
 
-    </form>
-    
-    <script>
-        /**
-         * Objeto que contiene las respuestas correctas. 
-         * Se usan los nombres de pregunta secuenciales (pregunta1, pregunta2, etc.)
-         * como claves, al igual que en el cuestionario anterior.
-         */
-        const respuestasCorrectas = {
-            pregunta1: 'b',
-            pregunta2: 'c',
-            pregunta3: 'b',
-            pregunta4: 'b',
-            pregunta5: 'c',
-            pregunta6: 'b',
-            pregunta7: 'c',
-            pregunta8: 'c',
-            pregunta9: 'b',
-            pregunta10: 'c',
-            pregunta11: 'c',
-            pregunta12: 'c'
-        };
+                <h1>Cuestionario: Modelos de Ciclos de Vida y Metodologías Ágiles</h1>
+                <p>Selecciona la mejor opción para cada pregunta.</p>
 
-        function calcularPuntuacion(event) {
-            // Evita que el formulario se envíe y recargue la página.
-            event.preventDefault(); 
+                <form id="cuestionario2" onsubmit="return calcularPuntuacion(event)">
 
-            let aciertos = 0;
-            const totalPreguntas = Object.keys(respuestasCorrectas).length;
+                    <fieldset>
+                        <legend>
+                            <h2>PREGUNTAS DE MODELOS DE CICLOS DE VIDA DEL SOFTWARE</h2>
+                        </legend>
 
-            // Itera sobre cada pregunta.
-            for (const nombrePregunta in respuestasCorrectas) {
-                const respuestaCorrecta = respuestasCorrectas[nombrePregunta];
-                
-                // Obtiene el input de radio seleccionado por el usuario.
-                const seleccionUsuario = document.querySelector(`input[name="${nombrePregunta}"]:checked`);
-                
-                // Compara la selección con la respuesta correcta.
-                if (seleccionUsuario && seleccionUsuario.value === respuestaCorrecta) {
-                    aciertos++;
-                }
-            }
+                        <p>1. ¿Cuál es la principal característica del modelo en cascada según su definición clásica?
+                        </p>
+                        <div>
+                            <input type="radio" id="p1_a" name="pregunta1" value="a">
+                            <label for="p1_a">a) Permite la entrega continua de incrementos de software.</label><br>
 
-            // Calcula los fallos.
-            const fallos = totalPreguntas - aciertos;
+                            <input type="radio" id="p1_b" name="pregunta1" value="b">
+                            <label for="p1_b">b) Las fases se ejecutan de forma secuencial permitiendo retrocesos
+                                limitados.</label><br>
 
-            // Prepara el mensaje para la alerta (usando \n para saltos de línea).
-            const mensajeResultado = 
-                "🎉 Resultados del Cuestionario 🎉\n\n" +
-                "Total de preguntas: " + totalPreguntas + "\n" +
-                "Aciertos: " + aciertos + "\n" +
-                "Fallos: " + fallos + "\n\n" +
-                "¡Sigue estudiando los Modelos de Ciclos de Vida!";
+                            <input type="radio" id="p1_c" name="pregunta1" value="c">
+                            <label for="p1_c">c) Se centra en prototipos que evolucionan hasta el producto
+                                final.</label><br>
 
-            // Muestra el resultado en una alerta emergente.
-            alert(mensajeResultado);
-            
-            return false;
-        }
-    </script>
+                            <input type="radio" id="p1_d" name="pregunta1" value="d">
+                            <label for="p1_d">d) Se basa en ciclos iterativos organizados alrededor del análisis de
+                                riesgos.</label>
+                        </div>
 
+                        <p>2. ¿Cuál de los siguientes es un inconveniente señalado para el modelo en cascada?</p>
+                        <div>
+                            <input type="radio" id="p2_a" name="pregunta2" value="a">
+                            <label for="p2_a">a) Es difícil de comprender y planificar.</label><br>
+
+                            <input type="radio" id="p2_b" name="pregunta2" value="b">
+                            <label for="p2_b">b) El cliente obtiene versiones funcionales desde el
+                                principio.</label><br>
+
+                            <input type="radio" id="p2_c" name="pregunta2" value="c">
+                            <label for="p2_c">c) Detectar tarde un fallo implica rehacer varias fases
+                                previas.</label><br>
+
+                            <input type="radio" id="p2_d" name="pregunta2" value="d">
+                            <label for="p2_d">d) Su excesiva flexibilidad provoca confusión en el equipo.</label>
+                        </div>
+
+                        <p>3. ¿Qué problema intenta resolver el modelo de proceso incremental?</p>
+                        <div>
+                            <input type="radio" id="p3_a" name="pregunta3" value="a">
+                            <label for="p3_a">a) La complejidad del análisis de riesgos.</label><br>
+
+                            <input type="radio" id="p3_b" name="pregunta3" value="b">
+                            <label for="p3_b">b) Que el cliente recibe una versión funcional demasiado
+                                tarde.</label><br>
+
+                            <input type="radio" id="p3_c" name="pregunta3" value="c">
+                            <label for="p3_c">c) La excesiva documentación generada durante las fases.</label><br>
+
+                            <input type="radio" id="p3_d" name="pregunta3" value="d">
+                            <label for="p3_d">d) La dificultad de incorporar cambios en el mantenimiento.</label>
+                        </div>
+
+                        <p>4. ¿Qué afirmación describe mejor el modelo incremental?</p>
+                        <div>
+                            <input type="radio" id="p4_a" name="pregunta4" value="a">
+                            <label for="p4_a">a) El software se construye mediante prototipos rápidos
+                                descartables.</label><br>
+
+                            <input type="radio" id="p4_b" name="pregunta4" value="b">
+                            <label for="p4_b">b) En cada incremento se aplican las fases del modelo en
+                                cascada.</label><br>
+
+                            <input type="radio" id="p4_c" name="pregunta4" value="c">
+                            <label for="p4_c">c) Todo el software se desarrolla antes de cualquier entrega.</label><br>
+
+                            <input type="radio" id="p4_d" name="pregunta4" value="d">
+                            <label for="p4_d">d) No permite retroalimentación del cliente.</label>
+                        </div>
+
+                        <p>5. Según el texto, ¿cuándo es más recomendable emplear el modelo incremental?</p>
+                        <div>
+                            <input type="radio" id="p5_a" name="pregunta5" value="a">
+                            <label for="p5_a">a) Cuando los requisitos están completamente definidos desde el
+                                principio.</label><br>
+
+                            <input type="radio" id="p5_b" name="pregunta5" value="b">
+                            <label for="p5_b">b) Cuando no se esperan cambios en el proyecto.</label><br>
+
+                            <input type="radio" id="p5_c" name="pregunta5" value="c">
+                            <label for="p5_c">c) Cuando los requisitos no están bien definidos y es probable que
+                                cambien.</label><br>
+
+                            <input type="radio" id="p5_d" name="pregunta5" value="d">
+                            <label for="p5_d">d) Cuando se desea evitar entregas parciales al cliente.</label>
+                        </div>
+
+                        <p>6. ¿Qué distinguen en común los modelos del proceso evolutivo (prototipos y espiral)?</p>
+                        <div>
+                            <input type="radio" id="p6_a" name="pregunta6" value="a">
+                            <label for="p6_a">a) Ambos evitan completamente el uso del modelo en cascada.</label><br>
+
+                            <input type="radio" id="p6_b" name="pregunta6" value="b">
+                            <label for="p6_b">b) Siguen un proceso incremental que genera versiones cada vez más
+                                completas.</label><br>
+
+                            <input type="radio" id="p6_c" name="pregunta6" value="c">
+                            <label for="p6_c">c) No permiten interacción del cliente hasta la última etapa.</label><br>
+
+                            <input type="radio" id="p6_d" name="pregunta6" value="d">
+                            <label for="p6_d">d) Se aplican únicamente en proyectos sin riesgos.</label>
+                        </div>
+
+                        <p>7. ¿Qué fase es clave en el modelo en espiral y lo diferencia del incremental y el cascada?
+                        </p>
+                        <div>
+                            <input type="radio" id="p7_a" name="pregunta7" value="a">
+                            <label for="p7_a">a) Programación.</label><br>
+
+                            <input type="radio" id="p7_b" name="pregunta7" value="b">
+                            <label for="p7_b">b) Revisión formal de documentación.</label><br>
+
+                            <input type="radio" id="p7_c" name="pregunta7" value="c">
+                            <label for="p7_c">c) Análisis de riesgos en cada iteración.</label><br>
+
+                            <input type="radio" id="p7_d" name="pregunta7" value="d">
+                            <label for="p7_d">d) Entrega única del software tras todas las fases.</label>
+                        </div>
+
+                        <p>8. ¿Cuál es la principal desventaja del modelo en espiral según Pressman?</p>
+                        <div>
+                            <input type="radio" id="p8_a" name="pregunta8" value="a">
+                            <label for="p8_a">a) Es demasiado rígido y secuencial.</label><br>
+
+                            <input type="radio" id="p8_b" name="pregunta8" value="b">
+                            <label for="p8_b">b) Requiere poca documentación y genera confusión.</label><br>
+
+                            <input type="radio" id="p8_c" name="pregunta8" value="c">
+                            <label for="p8_c">c) Exige mucha experiencia en la evaluación de riesgos.</label><br>
+
+                            <input type="radio" id="p8_d" name="pregunta8" value="d">
+                            <label for="p8_d">d) No puede combinarse con el modelo en cascada.</label>
+                        </div>
+                    </fieldset>
+
+                    <hr>
+
+                    <fieldset>
+                        <legend>
+                            <h2>PREGUNTAS DE METODOLOGÍAS RUP Y ÁGILES</h2>
+                        </legend>
+
+                        <p>1. ¿Cuál es el objetivo principal de la fase de comienzo (inception) en RUP?</p>
+                        <div>
+                            <input type="radio" id="p9_a" name="pregunta9" value="a">
+                            <label for="p9_a">a) Implementar el sistema completo.</label><br>
+
+                            <input type="radio" id="p9_b" name="pregunta9" value="b">
+                            <label for="p9_b">b) Establecer la viabilidad del sistema y definir su alcance.</label><br>
+
+                            <input type="radio" id="p9_c" name="pregunta9" value="c">
+                            <label for="p9_c">c) Eliminar los riesgos importantes mediante un prototipo.</label><br>
+
+                            <input type="radio" id="p9_d" name="pregunta9" value="d">
+                            <label for="p9_d">d) Realizar las pruebas del sistema.</label>
+                        </div>
+
+                        <p>2. ¿Cuál de los siguientes elementos pertenece a los flujos de ingeniería dentro de RUP?</p>
+                        <div>
+                            <input type="radio" id="p10_a" name="pregunta10" value="a">
+                            <label for="p10_a">a) Gestión de proyecto.</label><br>
+
+                            <input type="radio" id="p10_b" name="pregunta10" value="b">
+                            <label for="p10_b">b) Entorno.</label><br>
+
+                            <input type="radio" id="p10_c" name="pregunta10" value="c">
+                            <label for="p10_c">c) Modelado del negocio.</label><br>
+
+                            <input type="radio" id="p10_d" name="pregunta10" value="d">
+                            <label for="p10_d">d) Gestión de la configuración.</label>
+                        </div>
+
+                        <p>3. ¿Cuál de las siguientes características diferencia a las metodologías ágiles frente a
+                            otras más tradicionales?</p>
+                        <div>
+                            <input type="radio" id="p11_a" name="pregunta11" value="a">
+                            <label for="p11_a">a) Mayor importancia a la documentación detallada.</label><br>
+
+                            <input type="radio" id="p11_b" name="pregunta11" value="b">
+                            <label for="p11_b">b) Menor frecuencia de entregas al cliente.</label><br>
+
+                            <input type="radio" id="p11_c" name="pregunta11" value="c">
+                            <label for="p11_c">c) Entrega frecuente de software que funcione y colaboración continua con
+                                el cliente.</label><br>
+
+                            <input type="radio" id="p11_d" name="pregunta11" value="d">
+                            <label for="p11_d">d) Equipos grandes y jerarquizados con roles muy estrictos.</label>
+                        </div>
+
+                        <p>4. Según los principios ágiles, ¿cuál es la principal medida del progreso en un proyecto?</p>
+                        <div>
+                            <input type="radio" id="p12_a" name="pregunta12" value="a">
+                            <label for="p12_a">a) El porcentaje de tareas completadas según el plan.</label><br>
+
+                            <input type="radio" id="p12_b" name="pregunta12" value="b">
+                            <label for="p12_b">b) La cantidad de documentación generada.</label><br>
+
+                            <input type="radio" id="p12_c" name="pregunta12" value="c">
+                            <label for="p12_c">c) Un software que funcione.</label><br>
+
+                            <input type="radio" id="p12_d" name="pregunta12" value="d">
+                            <label for="p12_d">d) El número de reuniones realizadas.</label>
+                        </div>
+
+                    </fieldset>
+
+                    <hr>
+
+                    <div>
+                        <input type="submit" value="Ver Puntuación (Alerta)">
+                    </div>
+
+                </form>
+
+                <script src="js/test2.js">
+                </script>
+
+            </div>
+        </div>
+    </main>
+    <footer class="contenedor">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0"><strong>1º DAM</strong> - Proyecto Intermodular</p>
+                <small class="text-muted">2025/2026</small>
+            </div>
+            <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                <small class="text-muted">Por: Raquel, Emma, Chris, Jordi</small>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
