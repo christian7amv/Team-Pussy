@@ -82,24 +82,7 @@ fieldset {
             font-size: 20px;
         }
 
-        .pregunta-bloque {
-            margin-bottom: 20px;
-        }
 
-        .pregunta {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        .respuestas {
-            margin-left: 20px;
-        }
-
-        .respuestas label {
-            display: block;
-            margin-bottom: 6px;
-            cursor: pointer;
-        }
 
         input[type="submit"] {
             padding: 10px 20px;
