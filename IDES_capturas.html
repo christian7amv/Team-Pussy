@@ -17,9 +17,7 @@
   <header>
     <div class="barraSuperior contenedor">
       <div class="logo">
-        <a href="index.html">
-          <img class="IMG" src="assets/img/Stardew-Valley-Cat-Pouncing-On-Yarn-Ball-PNG.png" alt="logo">
-        </a>
+        <a href="index.html"><img class="IMG" src="assets/img/Stardew-Valley-Cat-Pouncing-On-Yarn-Ball-PNG.png" alt="logo"></a>
         <div>
           <div style="font-weight:800">TEAM PUSSY</div>
           <div class="text-muted" style="font-size:12px">1º DAM</div>
@@ -51,100 +49,259 @@
     </div>
   </header>
 
+  <!-- Contenido principal (Utilización de los IDEs) -->
   <main>
     <div class="fondo contenedor">
-      <div class="interior">
+      <div class="interior" style="background-color: rgb(241, 241, 241); color: var(--texto);">
         <h1>Utilización de los IDEs</h1>
 
         <!-- Introducción general -->
-        <h3>Instalar y configurar IDEs</h3>
-        <p>Los IDEs proporcionan herramientas y funcionalidades para ayudar a los programadores a escribir, depurar y mantener código de manera más eficiente. Integran editor de código, compilador o intérprete y depurador en una sola interfaz, centralizando las tareas más comunes.</p>
+        <!-- Propósito de los IDEs y qué integran -->
+        <h2>Instalar y configurar IDEs</h2>
+        <p>En estos apartados se explica paso por paso cómo instalar programas (IDES) que proporcionan herramientas y funcionalidades para ayudar a los programadores a escribir, depurar y mantener código de manera más eficiente. Los IDEs integran varias herramientas que normalmente se usarían por separado, como un editor de código, un compilador o intérprete, y un depurador, en una sola interfaz de usuario. Esto facilita el proceso de desarrollo al centralizar las tareas más comunes en un solo lugar.</p>
 
-        <!-- Módulos -->
-        <h3>¿Qué son los módulos?</h3>
-        <p>Son componentes o secciones específicas que permiten que el entorno ofrezca diferentes funcionalidades. También se conocen como extensiones o plugins.</p>
+        <!-- Módulos / plugins -->
+        <h2>¿Qué son los módulos?</h2>
+        <p>Los módulos son componentes o secciones específicas que permiten que el entorno ofrezca diferentes funcionalidades para ayudar en el proceso de desarrollo de programas. También se conocen como extensiones o plugins.</p>
 
-        <!-- IntelliJ IDEA -->
+        <!-- IntelliJ IDEA: instalación -->
         <h2>IntelliJ IDEA</h2>
         <ul>
-          <li>Busca en tu navegador: "IntelliJ IDEA download JetBrains".</li>
+          <li>Busca en tu navegador: “IntelliJ IDEA download JetBrains”.</li>
           <li>Entra al sitio oficial de JetBrains.</li>
           <li>Selecciona la versión Community (gratuita) o Ultimate (de pago).</li>
-          <li>Descarga el instalador para Windows (.exe).</li>
-          <li>Abre el instalador y sigue los pasos.</li>
-          <li>Activa Add to PATH si deseas ejecutarlo desde consola.</li>
-          <li>Asocia extensiones como .java o .kt si lo deseas.</li>
-          <li>Haz clic en Install y abre IntelliJ.</li>
-          <li>En el primer inicio, importa configuraciones anteriores o usa las predeterminadas.</li>
+          <li>Descarga el instalador para Windows (archivo .exe).</li>
+          <li>Abre el instalador.</li>
+          <li>Selecciona si deseas crear un acceso directo en el escritorio.</li>
+          <li>Puedes activar la opción Add to PATH si deseas ejecutar IntelliJ desde consola.</li>
+          <li>Opcionalmente puedes asociar extensiones como .java o .kt a IntelliJ.</li>
+          <li>Haz clic en Install.</li>
+          <li>Una vez completado, abre IntelliJ.</li>
+          <li>En el primer inicio, selecciona si deseas importar configuraciones anteriores o comenzar con la configuración por defecto.</li>
         </ul>
 
-        <!-- Plugins IntelliJ -->
-        <h3>Instalación de módulos (plugins) en IntelliJ IDEA</h3>
+        <!-- IntelliJ: plugins -->
+        <h3>Instalación de módulos de interés (plugins) en IntelliJ IDEA</h3>
         <ul>
           <li>Abre IntelliJ IDEA.</li>
           <li>En el panel izquierdo, entra a Plugins.</li>
-          <li>Selecciona el plugin deseado, por ejemplo "JetBrains AI Assistant".</li>
+          <li>Selecciona el plugin que deseas tener (por ejemplo, “JetBrains AI Assistant”).</li>
           <li>Haz clic en Install.</li>
+          <li>El asistente con IA queda integrado y accesible para consultas, generación de código, documentación, mensajes de commit, explicación de errores en tiempo de ejecución, etc.</li>
         </ul>
-        <p>Este plugin añade un asistente con IA integrado en el IDE para ayudarte a programar más rápido y con menos esfuerzo.</p>
 
-        <!-- Eclipse -->
+        <!-- Eclipse: instalación -->
         <h2>Eclipse</h2>
         <ul>
-          <li>Busca en tu navegador: "Eclipse IDE download".</li>
+          <li>Busca en tu navegador: “Eclipse IDE download”.</li>
           <li>Entra al sitio oficial de Eclipse Foundation.</li>
-          <li>Descarga el instalador correspondiente a tu sistema.</li>
-          <li>Ejecuta el instalador y selecciona la distribución que necesites (Java, C/C++, PHP, etc.).</li>
-          <li>Selecciona carpeta de instalación y haz clic en Install.</li>
-          <li>Al abrir Eclipse por primera vez, selecciona un workspace.</li>
+          <li>En la página de descargas, haz clic en el botón de descarga correspondiente (por ejemplo, Download x64).</li>
+          <li>Descargarás un archivo como “eclipse-inst-win64.exe”.</li>
+          <li>Ejecuta el instalador.</li>
+          <li>Selecciona la distribución que necesites: Eclipse IDE for Java Developers, C/C++, PHP, Embedded C/C++, etc.</li>
+          <li>Selecciona la carpeta donde deseas instalar Eclipse.</li>
+          <li>Haz clic en Install y acepta los permisos cuando te lo pida.</li>
+          <li>Una vez instalado, abre Eclipse.</li>
+          <li>En el primer inicio, selecciona un workspace (carpeta donde se guardarán tus proyectos).</li>
         </ul>
 
-        <!-- Plugins Eclipse -->
-        <h3>Instalación de módulos (plugins) en Eclipse</h3>
+        <!-- Eclipse: plugins -->
+        <h3>Instalación de módulos de interés (plugins) en Eclipse</h3>
         <ul>
           <li>Abre Eclipse.</li>
           <li>Ve a Help → Eclipse Marketplace.</li>
-          <li>Busca el plugin deseado, por ejemplo "GitHub Copilot".</li>
-          <li>Haz clic en Install.</li>
+          <li>En “Marketplace”, busca el plugin que necesites (por ejemplo, “GitHub Copilot 0.13.1”).</li>
+          <li>Instálalo desde ahí y sigue los pasos del asistente.</li>
         </ul>
 
-        <!-- Visual Studio Code -->
+        <!-- Visual Studio Code: instalación y extensiones -->
         <h2>Visual Studio Code</h2>
         <ul>
-          <li>Busca en tu navegador: "Visual Studio Code download".</li>
-          <li>Entra al sitio oficial de Microsoft.</li>
+          <li>Busca: “Visual Studio Code download”.</li>
+          <li>Entra al sitio oficial de Microsoft para VS Code.</li>
           <li>Descarga la versión Windows x64 System Installer.</li>
-          <li>Ejecuta el instalador, acepta la licencia y marca las opciones recomendadas (PATH).</li>
+          <li>Ejecuta el archivo .exe.</li>
+          <li>Acepta la licencia.</li>
+          <li>Marca las opciones recomendadas (como agregar al PATH).</li>
           <li>Instala y abre Visual Studio Code.</li>
         </ul>
 
-        <!-- Extensiones VS Code -->
-        <h3>Instalación de módulos (extensiones) en VS Code</h3>
-        <ul>
-          <li><strong>Auto Rename Tag:</strong> renombra automáticamente etiquetas HTML/XML.</li>
-          <li><strong>Live Server:</strong> despliega un servidor de desarrollo con recarga en tiempo real.</li>
-          <li><strong>Error Lens:</strong> muestra errores y advertencias directamente en el editor.</li>
-        </ul>
-        <p>Para eliminar extensiones, ve al apartado "Extensiones", busca el módulo y pulsa "Uninstall".</p>
+        <h3>Instalación de diferentes módulos de interés en VS Code</h3>
+        <h4>Auto Rename Tag</h4>
+        <p>Renombra automáticamente la etiqueta de cierre al editar HTML/XML (también soporta XML y JSX). Se instala desde el apartado de extensiones buscando “Auto Rename Tag”.</p>
 
-        <!-- Personalización VS Code -->
-        <h3>¿Cómo personalizar Visual Studio Code?</h3>
+        <h4>Live Server</h4>
+        <p>Despliega un servidor de desarrollo local y recarga en tiempo real con cada guardado, útil para revisar la interfaz al momento. Se instala desde el apartado de extensiones buscando “Live Server”.</p>
+
+        <h4>Error Lens</h4>
+        <p>Mejora la visibilidad de errores, warnings y diagnósticos del lenguaje directamente en el editor, con descripciones para corregir más rápido. Se instala desde Extensiones buscando “Error Lens”.</p>
+
+        <h4>¿Cómo eliminar extensiones en VS Code?</h4>
+        <p>Ve a “Extensiones”, busca el nombre del módulo que deseas desinstalar y pulsa “Uninstall”.</p>
+
+        <!-- VS Code: personalización visual -->
+        <h3>¿Cómo personalizar la visualización en Visual Studio Code?</h3>
+        <h4>Cambiar el tema de color</h4>
         <ul>
-          <li><strong>Cambiar tema de color:</strong> Ve a "View" → "Command Palette" → escribe "Color Theme" y elige uno.</li>
-          <li><strong>Modificar fuente y tamaño:</strong> Ve a "File" → "Preferences" → "Settings" → busca "Font".</li>
+          <li>Ve a “View” → “Command Palette”.</li>
+          <li>Escribe “Color Theme” y selecciona “Preferences: Color Theme”.</li>
+          <li>Elige un tema (por ejemplo: Dark+ (default dark), Light+ (default light), Abyss, Monokai, etc.).</li>
         </ul>
 
-        <!-- NetBeans -->
+        <!-- Modificar fuentes y tamaño -->
+        <h2>Modificar la fuente y tamaño del texto</h2>
+        <h4>Visual Studio Code</h4>
+        <ul>
+          <li>Abre la configuración: File → Preferences → Settings.</li>
+          <li>Busca “Font”.</li>
+          <li>Ahí puedes cambiar el tipo de fuente, tamaño y opciones relacionadas (Editor: Font Family, Editor: Font Size, Code Lens, Inlay Hints, etc.).</li>
+        </ul>
+
+        <h4>NetBeans</h4>
+        <p>En Tools → Options → Fonts & Colors puedes cambiar perfil (p. ej., FlatLaf Dark/Light), tamaño y estilo de fuente, colores de sintaxis, anotaciones, etc. Incluye “Font Chooser” para seleccionar tipografías (Monospaced, JetBrains Mono, etc.), estilos (Plain/Bold/Italic) y tamaño.</p>
+
+        <h4>IntelliJ IDEA</h4>
+        <p>En Settings → Editor → Font puedes seleccionar la tipografía (p. ej., JetBrains Mono), tamaño, altura de línea y ligaduras. También puedes ajustar el color scheme y typography settings.</p>
+
+        <h4>Eclipse</h4>
+        <p>En Window → Preferences → General → Appearance → Colors and Fonts puedes cambiar fuente, tamaño, colores de texto, asistentes de contenido y más.</p>
+
+        <!-- Personalización de apariencia (temas) -->
+        <h2>Personalización de apariencia en los IDEs</h2>
+        <h4>NetBeans</h4>
+        <p>Tools → Options → Fonts & Colors. Cambia tema (FlatLaf Dark/Light, City Lights, Norway Today, etc.), colores de “Character”, “Comment”, “Identifier”, fondo, efectos, y más.</p>
+
+        <h4>IntelliJ IDEA</h4>
+        <p>File → Settings → Appearance & Behavior → Appearance. Cambia el tema principal (Dark, sincronización con OS, etc.) y personaliza Menus and Toolbars (Main Menu, Main Toolbar, Editor Popup/Gutter, Project View, Navigation Bar, Debug Header, etc.).</p>
+
+        <h4>Eclipse</h4>
+        <p>Window → Preferences → General → Appearance. Activa “Enable theming”, selecciona “Theme” (por ejemplo, Dark) y ajusta “Color and font theme”.</p>
+
+        <!-- Atajos de teclado -->
+        <h2>Personalizar atajos de teclado</h2>
+        <h4>Visual Studio Code</h4>
+        <ul>
+          <li>Abre la Command Palette.</li>
+          <li>Escribe “Preferences: Open Keyboard Shortcuts (JSON)” para editar keybindings.json manualmente.</li>
+        </ul>
+
+        <h4>NetBeans</h4>
+        <p>Tools → Options → Keymap. Permite actualizar, modificar y añadir atajos. Dispone de perfiles predeterminados basados en otros IDEs (NetBeans, Eclipse, Emacs, Idea, NetBeans 5.5, etc.).</p>
+
+        <h4>IntelliJ IDEA</h4>
+        <p>Settings → Keymap. Ofrece perfiles (Windows, Eclipse, Emacs, NetBeans, Sublime Text, Visual Studio, VSCode, macOS, etc.) y permite editar acciones del editor, version control, build/deploy, debugger, herramientas externas.</p>
+
+        <h4>Eclipse</h4>
+        <p>Window → Preferences → General → Keys. Cambia el esquema (Default), y mapea comandos (por ejemplo, Activate Editor, Abort Build, Add Block Comment) con bindings (F12, Ctrl+Shift+/, etc.) según el contexto (In Windows, Editing, Source).</p>
+
+        <!-- Actualizaciones de VS Code -->
+        <h2>Configuración del sistema de actualización (VS Code)</h2>
+        <h4>Verificar actualización manualmente</h4>
+        <ul>
+          <li>Abre VS Code.</li>
+          <li>Ve a Help → Check for Updates.</li>
+          <li>Si hay una actualización, VS Code te lo notificará para instalarla.</li>
+        </ul>
+
+        <h4>Cambiar configuración de actualizaciones automáticas</h4>
+        <ul>
+          <li>Abre File → Preferences → Settings.</li>
+          <li>Busca “update”.</li>
+          <li>Configura:
+            <ul>
+              <li>update.channel: “default” o “insider”.</li>
+              <li>update.mode: “default” (auto) o “manual”.</li>
+              <li>Extensions: Auto Check Updates y Auto Update.</li>
+              <li>Update: Show Release Notes.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Características VS Code -->
+        <h2>Visual Studio Code: características generales y específicas</h2>
+        <h3>Características comunes</h3>
+        <ul>
+          <li>Multiplataforma (Windows, macOS, Linux).</li>
+          <li>Soporte de múltiples lenguajes mediante extensiones (JavaScript, Python, etc.).</li>
+          <li>Extensiones para añadir funcionalidades y herramientas.</li>
+          <li>Depuración integrada.</li>
+          <li>Git integrado.</li>
+          <li>IntelliSense (autocompletado y sugerencias inteligentes).</li>
+          <li>Interfaz personalizable (temas, disposición, accesibilidad).</li>
+        </ul>
+
+        <h3>Características específicas</h3>
+        <ul>
+          <li>Vista dividida (paneles horizontales/verticales).</li>
+          <li>Terminal integrada.</li>
+          <li>Soporte remoto (servidores, contenedores, entornos remotos).</li>
+          <li>Live Share (colaboración en tiempo real).</li>
+          <li>Refactorización de código (mejora y reestructuración segura).</li>
+        </ul>
+        <p>VS Code es ideal por su ligereza, flexibilidad y herramientas avanzadas que mejoran la productividad.</p>
+
+        <!-- NetBeans: descarga, actualización y plugins -->
         <h2>NetBeans</h2>
-        <p>En NetBeans puedes personalizar fuentes y colores desde Tools → Options → Fonts & Colors. También puedes instalar plugins desde el gestor de extensiones.</p>
+        <h3>Descarga e instalación</h3>
+        <ul>
+          <li>Busca: “Apache NetBeans download”.</li>
+          <li>Entra al sitio oficial de Apache NetBeans.</li>
+          <li>Selecciona la versión más reciente (por ejemplo, Apache NetBeans 28, lanzada el 10 de noviembre de 2025).</li>
+          <li>Elige el instalador para Windows (archivo .exe o .msi según la versión), o descarga el binario independiente “netbeans-28-bin.zip”.</li>
+          <li>Verifica integridad con firmas PGP (.asc) o hash (.sha512) si lo deseas.</li>
+          <li>Descarga el archivo .zip y descomprímelo. Dentro de la carpeta “netbeans” → “bin”, ejecuta el programa (netbeans/netbeans64).</li>
+        </ul>
 
-        <!-- Personalización IntelliJ -->
-        <h2>IntelliJ IDEA (personalización)</h2>
-        <p>Desde File → Settings → Appearance & Behavior puedes cambiar el tema principal y personalizar menús y toolbars.</p>
+        <h3>Configuración del sistema de actualización en NetBeans</h3>
+        <ol>
+          <li>Inicia NetBeans.</li>
+          <li>Ve a Tools → Plugins.</li>
+          <li>Accede a la pestaña Settings.</li>
+          <li>Configura “Update Centers”: activar/desactivar repositorios (Enabled), editar la URL (Edit), eliminar (Remove).</li>
+          <li>Para añadir una fuente distinta: pulsa Add, define Name y URL del repositorio (proporcionada por el proveedor del plugin).</li>
+          <li>Configura “Automatically Check for Updates” y “Check Interval” (por ejemplo, Every Week). Ajusta Proxy Settings/Advanced si es necesario.</li>
+        </ol>
 
-        <!-- Personalización Eclipse -->
-        <h2>Eclipse (personalización)</h2>
-        <p>Desde Window → Preferences → General → Appearance puedes cambiar el tema principal y ajustar colores y fuentes.</p>
+        <h3>Instalar plugins en NetBeans (Plugin Manager)</h3>
+        <ul>
+          <li>Tools → Plugins.</li>
+          <li>Pestañas:
+            <ul>
+              <li>Available Plugins: plugins disponibles en los repositorios configurados.</li>
+              <li>Downloaded: instalar plugins desde archivos .nbm.</li>
+              <li>Installed: lista de plugins instalados (activar/desactivar/desinstalar).</li>
+              <li>Settings: repositorios y comprobación automática de actualizaciones.</li>
+            </ul>
+          </li>
+          <li>Marca los plugins que necesites en “Available Plugins” y pulsa Install.</li>
+          <li>Sigue el asistente y reinicia NetBeans si lo solicita.</li>
+          <li>Ejemplo: “Memory Usage Statusline”.</li>
+        </ul>
+
+        <h3>Generar un ejecutable en NetBeans y ejecutar en terminal</h3>
+        <ol>
+          <li>Selecciona el proyecto y ejecuta “Clean and Build Project”.</li>
+          <li>Se crea la carpeta “dist” dentro del proyecto.</li>
+          <li>En el archivo README se indica cómo ejecutar el .jar desde terminal, por ejemplo:
+            <ul>
+              <li>java -jar "UT3_Arrays_Ejemplos.jar"</li>
+            </ul>
+          </li>
+          <li>Abre la carpeta “dist” en terminal y ejecuta el comando anterior para correr el proyecto.</li>
+        </ol>
+
+        <h3>Exportar desde NetBeans e importar en Eclipse</h3>
+        <ol>
+          <li>En NetBeans: File → Export Project → To ZIP. Selecciona el proyecto y la ruta (Build ZIP) y exporta.</li>
+          <li>En Eclipse: File → Import → General → Existing Projects into Workspace.</li>
+          <li>Importa el proyecto:
+            <ul>
+              <li>Opción “Select root directory” (requiere ZIP descomprimido), o</li>
+              <li>Opción “Select Archive File” (importa directamente el ZIP).</li>
+            </ul>
+          </li>
+          <li>Pulsa Finish. El proyecto aparecerá en Eclipse.</li>
+        </ol>
       </div>
     </div>
   </main>
@@ -162,3 +319,4 @@
   </footer>
 </body>
 </html>
+
