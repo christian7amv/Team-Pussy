@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Página Web</title>
-  
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
         crossorigin="anonymous">
-  
-  <!-- Estilos propios -->
+
+  <!-- Estilos globales y específicos -->
   <link rel="stylesheet" href="css/styles.css">
-  
+  <link rel="stylesheet" href="css/pages.css">
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
           integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
           crossorigin="anonymous"></script>
-  
+
   <!-- Script propio -->
   <script src="js/app.js" defer></script>
 </head>
@@ -30,12 +31,10 @@
         <a href="index.html">
           <img class="IMG" src="assets/img/Stardew-Valley-Cat-Pouncing-On-Yarn-Ball-PNG.png" alt="logo">
         </a>
-        <div>
-          <div style="font-weight:800">TEAM PUSSY</div>
-          <div class="text-muted" style="font-size:12px">1º DAM</div>
-        </div>
+        <div style="font-weight:800">TEAM PUSSY</div>
+        <div class="text-muted" style="font-size:12px">1º DAM</div>
       </div>
-      
+
       <!-- Navegación -->
       <nav>
         <ul>
@@ -49,7 +48,7 @@
               <li><a class="dropdown-item" href="PII.html#1.c">1.c</a></li>
             </ul>
           </li>
-          
+
           <li class="dropdown">
             <a class="btn btn-custom dropdown-toggle" role="button" data-bs-toggle="dropdown">
               Entornos
@@ -63,26 +62,103 @@
       </nav>
     </div>
   </header>
-  
+
   <!-- Main -->
   <main>
     <div class="fondo contenedor">
       <div class="interior">
         <h1>Todo sobre los IDEs</h1>
         <h3 class="subtitulo">¿Qué te apetece ver?</h3>
-        
+
         <div class="tarjetas">
-          <!-- Tarjeta 1 -->
+          <!-- Tarjeta 1: Utilización de los IDEs -->
           <div class="tarjeta">
             <img src="assets/img/uso_de_ides.webp" alt="usoIdes">
             <div class="cuerpo">
               <h3>Utilización de IDEs</h3>
               <p class="descripcion">Demostración paso a paso</p>
-              <a class="btn btn-custom" role="button" href="IDES_capturas.html">Ver info</a>
+
+              <!-- Información completa del PDF -->
+              <h2>Instalar y configurar IDEs</h2>
+              <p>Los IDEs proporcionan herramientas y funcionalidades para ayudar a los programadores a escribir, depurar y mantener código de manera más eficiente. Integran editor de código, compilador o intérprete y depurador en una sola interfaz, centralizando las tareas más comunes.</p>
+
+              <h2>¿Qué son los módulos?</h2>
+              <p>Los módulos son componentes o secciones específicas que permiten que el entorno ofrezca diferentes funcionalidades. También se conocen como extensiones o plugins.</p>
+
+              <h2>IntelliJ IDEA</h2>
+              <ul>
+                <li>Busca en tu navegador: "IntelliJ IDEA download JetBrains".</li>
+                <li>Entra al sitio oficial de JetBrains.</li>
+                <li>Selecciona la versión Community (gratuita) o Ultimate (de pago).</li>
+                <li>Descarga el instalador para Windows (.exe).</li>
+                <li>Abre el instalador y sigue los pasos.</li>
+                <li>Opcionalmente activa Add to PATH y asocia extensiones como .java o .kt.</li>
+                <li>Haz clic en Install y abre IntelliJ.</li>
+                <li>En el primer inicio, importa configuraciones anteriores o usa las predeterminadas.</li>
+              </ul>
+
+              <h3>Instalación de módulos (plugins) en IntelliJ IDEA</h3>
+              <ul>
+                <li>Abre IntelliJ IDEA.</li>
+                <li>En el panel izquierdo, entra a Plugins.</li>
+                <li>Selecciona el plugin deseado, por ejemplo "JetBrains AI Assistant".</li>
+                <li>Haz clic en Install.</li>
+              </ul>
+              <p>Este plugin añade un asistente con IA integrado en el IDE para ayudar en tareas de programación.</p>
+
+              <h2>Eclipse</h2>
+              <ul>
+                <li>Busca en tu navegador: "Eclipse IDE download".</li>
+                <li>Entra al sitio oficial de Eclipse Foundation.</li>
+                <li>Descarga el instalador correspondiente a tu sistema.</li>
+                <li>Ejecuta el instalador y selecciona la distribución (Java, C/C++, PHP, etc.).</li>
+                <li>Selecciona carpeta de instalación y haz clic en Install.</li>
+                <li>Al abrir Eclipse por primera vez, selecciona un workspace.</li>
+              </ul>
+
+              <h3>Instalación de módulos (plugins) en Eclipse</h3>
+              <ul>
+                <li>Abre Eclipse.</li>
+                <li>Ve a Help → Eclipse Marketplace.</li>
+                <li>Busca el plugin deseado, por ejemplo "GitHub Copilot".</li>
+                <li>Haz clic en Install.</li>
+              </ul>
+
+              <h2>Visual Studio Code</h2>
+              <ul>
+                <li>Busca en tu navegador: "Visual Studio Code download".</li>
+                <li>Entra al sitio oficial de Microsoft.</li>
+                <li>Descarga la versión Windows x64 System Installer.</li>
+                <li>Ejecuta el instalador, acepta la licencia y marca las opciones recomendadas (PATH).</li>
+                <li>Instala y abre Visual Studio Code.</li>
+              </ul>
+
+              <h3>Extensiones útiles en VS Code</h3>
+              <ul>
+                <li><strong>Auto Rename Tag:</strong> renombra automáticamente etiquetas HTML/XML.</li>
+                <li><strong>Live Server:</strong> despliega un servidor de desarrollo con recarga en tiempo real.</li>
+                <li><strong>Error Lens:</strong> muestra errores y advertencias directamente en el editor.</li>
+              </ul>
+              <p>Para eliminar módulos, basta con ir a Extensiones, buscar el módulo y pulsar "Uninstall".</p>
+
+              <h3>Personalización en VS Code</h3>
+              <ul>
+                <li>Cambiar tema de color desde la Command Palette → Color Theme.</li>
+                <li>Modificar fuente y tamaño desde File → Preferences → Settings → Font.</li>
+              </ul>
+
+              <h2>NetBeans</h2>
+              <p>En NetBeans puedes personalizar fuentes y colores desde Tools → Options → Fonts & Colors, además de instalar plugins desde el gestor de extensiones.</p>
+
+              <h2>IntelliJ IDEA (personalización)</h2>
+              <p>Desde File → Settings → Appearance & Behavior puedes cambiar el tema principal y personalizar menús y toolbars.</p>
+
+              <h2>Eclipse (personalización)</h2>
+              <p>Desde Window → Preferences → General → Appearance puedes cambiar el tema principal y ajustar colores y fuentes.</p>
             </div>
           </div>
-          
-          <!-- Tarjeta 2 -->
+
+          <!-- Tarjeta 2: Características de los IDEs -->
           <div class="tarjeta">
             <img src="assets/img/logos_ides.jpg" alt="logosIdes">
             <div class="cuerpo">
@@ -92,10 +168,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </main>
-  
   <!-- Footer -->
   <footer class="contenedor">
     <div class="row">
