@@ -72,7 +72,22 @@ p {
   line-height: 1.6;
   text-align: justify;
 }
+fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
 
+        legend h2 {
+            font-size: 20px;
+        }
+
+
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
 
 @media (max-width: 768px) {
   .fondo .interior {

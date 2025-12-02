@@ -76,7 +76,7 @@ nav a{ /*Estilo de los enlaces en la barra de navegacion*/
 .dropdown:hover .dropdown-menu { /*Efecto hover de los botones en el menu dropdown*/
       display: block;
       margin-top: 0; 
-    }
+}
 
 .dropdown:hover .btn-custom{ /*Efecto hover de los botones en general*/
     --bs-btn-hover-bg: rgb(99, 114, 126);
