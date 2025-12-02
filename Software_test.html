@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="barraSuperior contenedor">
+            <div class="logo">
+                <img class="IMG" src="assets/img/Stardew-Valley-Cat-Pouncing-On-Yarn-Ball-PNG.png"
+                    alt="logo-team-pussy">
+                <div>
+                    <div style="font-weight:800">TEAM PUSSY</div>
+                    <div class="text-muted" style="font-size:12px">1º DAM</div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a class="btn btn-custom dropdown-toggle" href="PII.html" role="button"
+                            data-bs-toggle="dropdown">
+                            Proyecto II
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="PII.html">1.a</a></li>
+                            <li><a class="dropdown-item" href="PII.html#1.b">1.b</a></li>
+                            <li><a class="dropdown-item" href="PII.html#1.c">1.c</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="btn btn-custom dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Entornos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ED.html">Teoría</a></li>
+                            <li><a class="dropdown-item" href="IDEs.html">IDEs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="fondo contenedor">
+            <div class="interior" style="background-color: rgb(241, 241, 241); color: var(--texto);">
+                <h1>Cuestionario: Introducción a la Ingeniería del Software</h1>
+    <p>Por favor, selecciona una única respuesta para cada pregunta.</p>
+
+    <form id="cuestionario" onsubmit="return calcularPuntuacion(event)">
+
+        <fieldset>
+            <legend><h2>Test – Ingeniería del Software</h2></legend>
+
+            <p>1. ¿Cuál de los siguientes problemas formaron parte de la “crisis del software”?</p>
+            <div>
+                <input type="radio" id="p1_a" name="pregunta1" value="a">
+                <label for="p1_a">a) Exceso de herramientas disponibles</label><br>
+
+                <input type="radio" id="p1_b" name="pregunta1" value="b">
+                <label for="p1_b">b) Mala planificación y baja calidad del software</label><br>
+
+                <input type="radio" id="p1_c" name="pregunta1" value="c">
+                <label for="p1_c">c) Falta de ordenadores potentes</label>
+            </div>
+
+            <p>2. La ingeniería del software busca principalmente:</p>
+            <div>
+                <input type="radio" id="p2_a" name="pregunta2" value="a">
+                <label for="p2_a">a) Hacer programas más rápidos únicamente</label><br>
+
+                <input type="radio" id="p2_b" name="pregunta2" value="b">
+                <label for="p2_b">b) Aplicar principios de ingeniería para desarrollar software fiable y mantenible</label><br>
+
+                <input type="radio" id="p2_c" name="pregunta2" value="c">
+                <label for="p2_c">c) Sustituir la programación</label>
+            </div>
+        </fieldset>
+        
+        <hr>
+
+        <fieldset>
+            <legend><h2>Test – Fases del Desarrollo</h2></legend>
+
+            <p>1. ¿Qué documento se obtiene al finalizar el análisis?</p>
+            <div>
+                <input type="radio" id="p3_a" name="pregunta3" value="a">
+                <label for="p3_a">a) Código objeto</label><br>
+
+                <input type="radio" id="p3_b" name="pregunta3" value="b">
+                <label for="p3_b">b) Especificación de requisitos (ERS)</label><br>
+
+                <input type="radio" id="p3_c" name="pregunta3" value="c">
+                <label for="p3_c">c) Manual de usuario</label>
+            </div>
+
+            <p>2. ¿Qué fase determina cómo se resolverá el problema?</p>
+            <div>
+                <input type="radio" id="p4_a" name="pregunta4" value="a">
+                <label for="p4_a">a) Programación</label><br>
+
+                <input type="radio" id="p4_b" name="pregunta4" value="b">
+                <label for="p4_b">b) Diseño</label><br>
+
+                <input type="radio" id="p4_c" name="pregunta4" value="c">
+                <label for="p4_c">c) Mantenimiento</label>
+            </div>
+
+            <p>3. Las pruebas unitarias se realizan sobre:</p>
+            <div>
+                <input type="radio" id="p5_a" name="pregunta5" value="a">
+                <label for="p5_a">a) Todo el sistema completo</label><br>
+
+                <input type="radio" id="p5_b" name="pregunta5" value="b">
+                <label for="p5_b">b) La base de datos</label><br>
+
+                <input type="radio" id="p5_c" name="pregunta5" value="c">
+                <label for="p5_c">c) Componentes individuales</label>
+            </div>
+
+            <p>4. El mantenimiento perfectivo se encarga de:</p>
+            <div>
+                <input type="radio" id="p6_a" name="pregunta6" value="a">
+                <label for="p6_a">a) Corregir errores</label><br>
+
+                <input type="radio" id="p6_b" name="pregunta6" value="b">
+                <label for="p6_b">b) Añadir mejoras y nuevas funciones</label><br>
+
+                <input type="radio" id="p6_c" name="pregunta6" value="c">
+                <label for="p6_c">c) Actualizar hardware</label>
+            </div>
+
+            <p>5. La fase en la que se escribe el código fuente es:</p>
+            <div>
+                <input type="radio" id="p7_a" name="pregunta7" value="a">
+                <label for="p7_a">a) Programación</label><br>
+
+                <input type="radio" id="p7_b" name="pregunta7" value="b">
+                <label for="p7_b">b) Diseño</label><br>
+
+                <input type="radio" id="p7_c" name="pregunta7" value="c">
+                <label for="p7_c">c) Explotación</label>
+            </div>
+
+            <p>6. Las pruebas beta se realizan:</p>
+            <div>
+                <input type="radio" id="p8_a" name="pregunta8" value="a">
+                <label for="p8_a">a) Durante el análisis</label><br>
+
+                <input type="radio" id="p8_b" name="pregunta8" value="b">
+                <label for="p8_b">b) En el entorno del cliente</label><br>
+
+                <input type="radio" id="p8_c" name="pregunta8" value="c">
+                <label for="p8_c">c) Dentro del equipo de desarrollo</label>
+            </div>
+
+            <p>7. ¿Qué tipo de requisito describe la seguridad o la escalabilidad?</p>
+            <div>
+                <input type="radio" id="p9_a" name="pregunta9" value="a">
+                <label for="p9_a">a) Funcional</label><br>
+
+                <input type="radio" id="p9_b" name="pregunta9" value="b">
+                <label for="p9_b">b) No funcional</label><br>
+
+                <input type="radio" id="p9_c" name="pregunta9" value="c">
+                <label for="p9_c">c) Técnico</label>
+            </div>
+
+            <p>8. ¿Cuál es la última fase del ciclo de vida según el libro?</p>
+            <div>
+                <input type="radio" id="p10_a" name="pregunta10" value="a">
+                <label for="p10_a">a) Diseño</label><br>
+
+                <input type="radio" id="p10_b" name="pregunta10" value="b">
+                <label for="p10_b">b) Pruebas</label><br>
+
+                <input type="radio" id="p10_c" name="pregunta10" value="c">
+                <label for="p10_c">c) Mantenimiento</label>
+            </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <legend><h2>Test – Perfiles que Intervienen</h2></legend>
+
+            <p>1. ¿Quién es el responsable último de que el proyecto se complete con éxito?</p>
+            <div>
+                <input type="radio" id="p11_a" name="pregunta11" value="a">
+                <label for="p11_a">a) Programador</label><br>
+
+                <input type="radio" id="p11_b" name="pregunta11" value="b">
+                <label for="p11_b">b) Jefe de proyecto</label><br>
+
+                <input type="radio" id="p11_c" name="pregunta11" value="c">
+                <label for="p11_c">c) Analista</label>
+            </div>
+
+            <p>2. ¿Qué perfil conoce profundamente el área del cliente?</p>
+            <div>
+                <input type="radio" id="p12_a" name="pregunta12" value="a">
+                <label for="p12_a">a) Experto del dominio</label><br>
+
+                <input type="radio" id="p12_b" name="pregunta12" value="b">
+                <label for="p12_b">b) Diseñador</label><br>
+
+                <input type="radio" id="p12_c" name="pregunta12" value="c">
+                <label for="p12_c">c) QA</label>
+            </div>
+
+            <p>3. ¿Quién define la estructura y arquitectura del sistema?</p>
+            <div>
+                <input type="radio" id="p13_a" name="pregunta13" value="a">
+                <label for="p13_a">a) Arquitecto</label><br>
+
+                <input type="radio" id="p13_b" name="pregunta13" value="b">
+                <label for="p13_b">b) Programador</label><br>
+
+                <input type="radio" id="p13_c" name="pregunta13" value="c">
+                <label for="p13_c">c) Analista</label>
+            </div>
+
+            <p>4. El analista se encarga de:</p>
+            <div>
+                <input type="radio" id="p14_a" name="pregunta14" value="a">
+                <label for="p14_a">a) Escribir código</label><br>
+
+                <input type="radio" id="p14_b" name="pregunta14" value="b">
+                <label for="p14_b">b) Crear modelos que describen el sistema</label><br>
+
+                <input type="radio" id="p14_c" name="pregunta14" value="c">
+                <label for="p14_c">c) Realizar pruebas</label>
+            </div>
+
+            <p>5. El personal de QA realiza:</p>
+            <div>
+                <input type="radio" id="p15_a" name="pregunta15" value="a">
+                <label for="p15_a">a) Pruebas</label><br>
+
+                <input type="radio" id="p15_b" name="pregunta15" value="b">
+                <label for="p15_b">b) Diseño de clases</label><br>
+
+                <input type="radio" id="p15_c" name="pregunta15" value="c">
+                <label for="p15_c">c) Planificación</label>
+            </div>
+
+            <p>6. El programador:</p>
+            <div>
+                <input type="radio" id="p16_a" name="pregunta16" value="a">
+                <label for="p16_a">a) Instala el software en el cliente</label><br>
+
+                <input type="radio" id="p16_b" name="pregunta16" value="b">
+                <label for="p16_b">b) Codifica los componentes definidos en el diseño</label><br>
+
+                <input type="radio" id="p16_c" name="pregunta16" value="c">
+                <label for="p16_c">c) Define los requisitos</label>
+            </div>
+
+            <p>7. ¿Quién trabaja directamente con el cliente para entender el problema?</p>
+            <div>
+                <input type="radio" id="p17_a" name="pregunta17" value="a">
+                <label for="p17_a">a) Analista</label><br>
+
+                <input type="radio" id="p17_b" name="pregunta17" value="b">
+                <label for="p17_b">b) Programador</label><br>
+
+                <input type="radio" id="p17_c" name="pregunta17" value="c">
+                <label for="p17_c">c) Arquitecto</label>
+            </div>
+
+            <p>8. El personal de soporte se ocupa de:</p>
+            <div>
+                <input type="radio" id="p18_a" name="pregunta18" value="a">
+                <label for="p18_a">a) Generar requisitos</label><br>
+
+                <input type="radio" id="p18_b" name="pregunta18" value="b">
+                <label for="p18_b">b) Atender incidencias y mantener el sistema</label><br>
+
+                <input type="radio" id="p18_c" name="pregunta18" value="c">
+                <label for="p18_c">c) Diseñar diagramas</label>
+            </div>
+        </fieldset>
+        
+        <hr>
+
+        <div>
+            <input type="submit" value="Ver Puntuación (Alerta)">
+        </div>
+
+    </form>
+    
+    <script>
+        const respuestasCorrectas = {
+            pregunta1: 'b',
+            pregunta2: 'b',
+            pregunta3: 'b',
+            pregunta4: 'b',
+            pregunta5: 'c',
+            pregunta6: 'b',
+            pregunta7: 'a',
+            pregunta8: 'b',
+            pregunta9: 'b',
+            pregunta10: 'c',
+            pregunta11: 'b',
+            pregunta12: 'a',
+            pregunta13: 'a',
+            pregunta14: 'b',
+            pregunta15: 'a',
+            pregunta16: 'b',
+            pregunta17: 'a',
+            pregunta18: 'b'
+        };
+
+        function calcularPuntuacion(event) {
+            // Evita que el formulario se envíe realmente y recargue la página.
+            event.preventDefault(); 
+
+            let aciertos = 0;
+            const totalPreguntas = Object.keys(respuestasCorrectas).length;
+
+            // Itera sobre cada pregunta.
+            for (const nombrePregunta in respuestasCorrectas) {
+                const respuestaCorrecta = respuestasCorrectas[nombrePregunta];
+                
+                // Obtiene la selección del usuario.
+                const seleccionUsuario = document.querySelector(`input[name="${nombrePregunta}"]:checked`);
+                
+                // Compara la selección con la respuesta correcta.
+                if (seleccionUsuario && seleccionUsuario.value === respuestaCorrecta) {
+                    aciertos++;
+                }
+            }
+
+            // Calcula los fallos.
+            const fallos = totalPreguntas - aciertos;
+
+            // Prepara el mensaje para la alerta (usando \n para saltos de línea).
+            const mensajeResultado = 
+                "🎉 Resultados del Cuestionario 🎉\n\n" +
+                "Total de preguntas: " + totalPreguntas + "\n" +
+                "Aciertos: " + aciertos + "\n" +
+                "Fallos: " + fallos + "\n\n" +
+                "¡Buen trabajo!";
+
+            // Muestra el resultado en una alerta emergente.
+            alert(mensajeResultado);
+            
+            return false;
+        }
+    </script>
+            </div>
+        </div>
+    </main>
+    <footer class="contenedor">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0"><strong>1º DAM</strong> - Proyecto Intermodular</p>
+                <small class="text-muted">2025/2026</small>
+            </div>
+            <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                <small class="text-muted">Por: Raquel, Emma, Chris, Jordi</small>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
